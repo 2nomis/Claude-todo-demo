@@ -1,0 +1,58 @@
+{
+  "schema": "ruflo-memory-export/v1",
+  "exportedAt": "2026-10-20T11:41:20.436Z",
+  "namespace": null,
+  "count": 5,
+  "entries": [
+    {
+      "key": "routing-decision:task-1792496406490-4krxbz",
+      "namespace": "default",
+      "value": "{\"task\":\"Fix authentication bug in login flow\",\"agent\":\"security-architect\",\"success\":true,\"quality\":0.9,\"keywords\":[\"fix\",\"authentication\",\"bug\",\"login\",\"flow\"]}",
+      "createdAt": 1792496480005,
+      "updatedAt": 1792496480409,
+      "accessCount": 0,
+      "hasEmbedding": true,
+      "size": 162
+    },
+    {
+      "key": "routing-decision:task-1792496406490-4krxbz",
+      "namespace": "patterns",
+      "value": "{\"task\":\"Fix authentication bug in login flow\",\"agent\":\"security-architect\",\"success\":true,\"quality\":0.9,\"keywords\":[\"fix\",\"authentication\",\"bug\",\"login\",\"flow\"]}",
+      "createdAt": 1792496416915,
+      "updatedAt": 1792496416950,
+      "accessCount": 0,
+      "hasEmbedding": true,
+      "size": 162
+    },
+    {
+      "key": "task-1792496406490-4krxbz→outcome-task-1792496406490-4krxbz",
+      "namespace": "causal-edges",
+      "value": "{\"sourceId\":\"task-1792496406490-4krxbz\",\"targetId\":\"outcome-task-1792496406490-4krxbz\",\"relation\":\"succeeded\",\"weight\":0.9}",
+      "createdAt": 1792496416817,
+      "updatedAt": 1792496416817,
+      "accessCount": 0,
+      "hasEmbedding": false,
+      "size": 123
+    },
+    {
+      "key": "feedback-task-1792496406490-4krxbz",
+      "namespace": "feedback",
+      "value": "{\"taskId\":\"task-1792496406490-4krxbz\",\"task\":\"Fix authentication bug in login flow\",\"success\":true,\"quality\":0.9,\"agent\":\"security-architect\",\"duration\":1200000}",
+      "createdAt": 1792496416781,
+      "updatedAt": 1792496416781,
+      "accessCount": 0,
+      "hasEmbedding": true,
+      "size": 161
+    },
+    {
+      "key": "test",
+      "namespace": "default",
+      "value": "hello world",
+      "createdAt": 1792496011232,
+      "updatedAt": 1792496011232,
+      "accessCount": 0,
+      "hasEmbedding": true,
+      "size": 11
+    }
+  ]
+}

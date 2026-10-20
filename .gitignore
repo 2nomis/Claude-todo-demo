@@ -1,0 +1,14 @@
+# Ruflo local secrets and runtime data
+.env
+.env.local
+.env.*.local
+.claude-flow/data/
+.claude-flow/logs/
+.claude-flow/sessions/
+
+# Ruflo runtime state (databases, daemon, swarm) - recreated by ruflo-setup.sh
+.swarm/
+.claude-flow/
+agentdb.rvf*
+ruvector.db
+.claude/settings.json.bak-*
