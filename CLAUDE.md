@@ -15,6 +15,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `public/` | `index.html`, `app.js`, `style.css` |
 | `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port), `url.test.js` |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein; auch als Setup-Skript für Cloud-Umgebungen (ohne Repo, Sitzung oder Zugangsdaten) |
+| `tools/paperclip/` | Paperclip mit Dropshipping-Agententeam: `setup.sh` (Installation), `start.sh` (Server + Team), `team.mjs` (Firma, Ziel, 9 Agenten) |
 
 ```bash
 npm install
@@ -48,6 +49,14 @@ Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Än
 - Kontextkosten: etwa 8.500 Tokens pro Sitzung. Abschalten: `"ecc@ecc": false` in `.claude/settings.local.json`.
 - Neun Namen gibt es als Befehl und als Skill (u. a. `ecc-guide`, `security-scan`, `plan-canvas`, `orch-*`); `/ecc:<name>` lädt dann immer den Befehl.
 - Bewährter Ablauf: `/ecc:plan` → `/ecc:tdd-workflow` → `/ecc:code-review`. `/ecc:code-review` mit PR-Nummer postet ein Review auf GitHub.
+
+## Paperclip
+
+- Nicht Teil der Todo-App: Agenten-Firma „Dropshipping Store“ für den Shop des Nutzers (CEO, Marketing mit Ads/Content/SEO, Produkt-Scout, Einkauf, Kundenservice, Finanzen). Rollentexte stehen in `tools/paperclip/team.mjs`.
+- Ablauf als root: `bash tools/paperclip/setup.sh`, dann `bash tools/paperclip/start.sh` (Server auf `127.0.0.1:3100`, Log `/home/paperclip/paperclip.log`). Nach neuem API-Schlüssel `start.sh --restart`.
+- `setup.sh` braucht kein Repo und eignet sich als Setup-Skript der Cloud-Umgebung; Versionen sind darin festgelegt (Paperclip `2026.1012.0`, Node `24.22.0`).
+- Bewusst so: Server läuft als Nutzer `paperclip`, weil das eingebettete Postgres nicht als root startet und als `postgres` nicht in `/root` kommt. Node 24 ist Pflicht (≥ 24.11). npm braucht `legacy-peer-deps`, sonst Fehler `edgesOut`.
+- Die Agenten (Adapter `claude_local`) arbeiten erst mit `ANTHROPIC_API_KEY` als Umgebungs-Secret; `start.sh` reicht ihn an den Server durch. Mit Schlüssel noch nicht getestet.
 
 ## Git
 
