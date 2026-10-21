@@ -3,12 +3,23 @@ const path = require('node:path');
 const { openDb } = require('./db');
 const { createApp } = require('./app');
 
-const port = Number(process.env.PORT ?? 3000);
+const portSetting = process.env.PORT || '3000';
+// Only reachable from this machine unless HOST is set (e.g. HOST=0.0.0.0).
+const host = process.env.HOST || '127.0.0.1';
 const dbPath = process.env.DB_PATH ?? path.join(__dirname, '..', 'data', 'todos.db');
 
+if (!/^\d+$/.test(portSetting) || Number(portSetting) > 65535) {
+  console.error(`Ungültiger PORT "${portSetting}": erlaubt ist eine ganze Zahl von 0 bis 65535.`);
+  process.exit(1);
+}
+const port = Number(portSetting);
+
 const db = openDb(dbPath);
-const server = createApp(db).listen(port, () => {
-  console.log(`Todo-App läuft auf http://localhost:${port} (Daten: ${dbPath})`);
+// Express 5 also calls this callback with the error if listening fails;
+// that case is reported by the 'error' handler below.
+const server = createApp(db).listen(port, host, (err) => {
+  if (err) return;
+  console.log(`Todo-App läuft auf http://${host}:${server.address().port} (Daten: ${dbPath})`);
 });
 
 server.on('error', (err) => {
