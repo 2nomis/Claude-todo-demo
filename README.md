@@ -41,7 +41,17 @@ Titel werden getrimmt und dürfen nicht leer und höchstens 200 Zeichen lang sei
 - **Hook-Profil:** `ECC_HOOK_PROFILE=minimal`. Hooks, die nur zu `standard`/`strict` gehören (z. B. Desktop-Benachrichtigung, Doc-Datei-Warnung, Config-Schutz), laufen damit nicht.
 - **Zusätzlich abgeschaltet** über `ECC_DISABLED_HOOKS`: `stop:cost-tracker` (Kosten-Telemetrie) und `stop:evaluate-session` (Musterextraktion für „Continuous Learning“).
 
-### Einrichten
+### Für alle Projekte einrichten (empfohlen)
+
+Einmal pro Rechner ausführen (macOS/Linux, braucht `claude`, `git` und `python3` oder `node`):
+
+```bash
+bash tools/ecc/setup-global.sh
+```
+
+Das Skript trägt dieselbe festgelegte ECC-Version und dieselben Hook-Einstellungen in `~/.claude/settings.json` ein. Vorher legt es eine Sicherung an, und andere Einträge bleiben erhalten. Danach installiert es `ecc@ecc` für alle Projekte (`--scope user`). Mehrfaches Ausführen ist unschädlich. Für ein Update `ECC_REF` und `ECC_SHA` im Skript anheben und es erneut ausführen.
+
+### Nur für dieses Repo einrichten
 
 Die Projekteinstellungen melden die Marketplace an und schalten das Plugin ein, **installieren es aber nicht**. Jede Person muss das einmal selbst tun, im Repo-Ordner und nachdem sie dem Ordner vertraut hat:
 
