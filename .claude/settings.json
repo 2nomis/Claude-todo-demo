@@ -1,0 +1,29 @@
+{
+  "extraKnownMarketplaces": {
+    "ecc": {
+      "source": {
+        "source": "settings",
+        "name": "ecc",
+        "plugins": [
+          {
+            "name": "ecc",
+            "description": "ECC v2.2.3, pinned to a fixed commit",
+            "source": {
+              "source": "github",
+              "repo": "affaan-m/ECC",
+              "ref": "v2.2.3",
+              "sha": "c05b2d6614f62f6db0047669aa4eefb223d478f9"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "enabledPlugins": {
+    "ecc@ecc": true
+  },
+  "env": {
+    "ECC_HOOK_PROFILE": "minimal",
+    "ECC_DISABLED_HOOKS": "stop:cost-tracker,stop:evaluate-session"
+  }
+}
