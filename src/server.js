@@ -11,6 +11,16 @@ const server = createApp(db).listen(port, () => {
   console.log(`Todo-App läuft auf http://localhost:${port} (Daten: ${dbPath})`);
 });
 
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`Port ${port} ist bereits belegt. Anderen Port wählen, z. B. PORT=3001 npm start`);
+  } else {
+    console.error(`Server konnte nicht starten: ${err.message}`);
+  }
+  db.close();
+  process.exit(1);
+});
+
 function shutdown() {
   server.close(() => {
     db.close();

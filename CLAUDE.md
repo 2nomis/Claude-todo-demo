@@ -12,7 +12,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `src/app.js` | Express-App `createApp(db)`: REST-API unter `/api/todos`, Validierung, JSON-Fehler `{ error }` |
 | `src/server.js` | Start; `PORT` (3000), `DB_PATH` (`data/todos.db`) |
 | `public/` | `index.html`, `app.js`, `style.css` |
-| `test/` | `node:test`: `db.test.js`, `api.test.js` |
+| `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start bei belegtem Port) |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein |
 
 ```bash
@@ -27,12 +27,12 @@ Konventionen:
 - Titel: getrimmt, nicht leer, höchstens 200 Zeichen (`MAX_TITLE_LENGTH`).
 - `data/` und `node_modules/` sind in `.gitignore`.
 
-## Offene Punkte (aus `/ecc:code-review`, nachgeprüft)
+Verhalten, das bewusst so ist:
+- Bearbeiten: Schlägt das Speichern fehl, bleibt das Feld mit der Eingabe offen; Enter versucht es erneut, Esc bricht ab. Nur nach Enter holt das Feld den Fokus zurück, nicht nach dem Herausklicken.
+- Bei belegtem Port beendet sich der Server mit Exit-Code 1 und einer klaren Meldung statt mit Stacktrace.
+- Der Server hängt beim Beenden nicht an offenen Keep-Alive-Verbindungen (gemessen: 9 ms); dafür ist kein Extra-Code nötig.
 
-1. `public/app.js`: Schlägt das Speichern beim Bearbeiten fehl, bleibt das Eingabefeld stehen und reagiert nicht mehr auf Enter/Esc (weil `finished` schon gesetzt ist und `run` bei Fehlern nicht neu rendert).
-2. `src/server.js`: Kein Handler für `listen`-Fehler; bei belegtem Port bricht der Prozess mit Stacktrace ab statt mit klarer Meldung.
-
-Nicht zutreffend: Der Server hängt beim Beenden nicht an offenen Keep-Alive-Verbindungen (gemessen: 9 ms).
+Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Änderungen an `public/` im Browser prüfen.
 
 ## ECC-Plugin
 
