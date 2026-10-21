@@ -98,23 +98,38 @@ function startEdit(item, todo) {
   field.value = todo.title;
   field.setAttribute('aria-label', 'Titel bearbeiten');
 
-  let finished = false;
-  const finish = (save) => {
-    if (finished) return;
-    finished = true;
+  // `busy` blocks double saves (Enter followed by blur); after a failed save
+  // the field stays open so the user can retry with Enter or cancel with Esc.
+  let busy = false;
+  const finish = async (save, { refocus = false } = {}) => {
+    if (busy) return;
     const title = field.value.trim();
-    if (save && title && title !== todo.title) {
-      run(() => request('PATCH', `${API}/${todo.id}`, { title }));
-    } else {
+    if (!save || !title || title === todo.title) {
+      busy = true;
+      showError('');
       render();
+      return;
+    }
+
+    busy = true;
+    try {
+      showError('');
+      await request('PATCH', `${API}/${todo.id}`, { title });
+      await load();
+    } catch (err) {
+      showError(err.message);
+      busy = false;
+      if (refocus && field.isConnected) field.focus();
     }
   };
 
   field.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') finish(true);
+    if (event.key === 'Enter') finish(true, { refocus: true });
     if (event.key === 'Escape') finish(false);
   });
-  field.addEventListener('blur', () => finish(true));
+  field.addEventListener('blur', () => {
+    if (!busy) finish(true);
+  });
 
   item.querySelector('.title').replaceWith(field);
   field.focus();
@@ -133,4 +148,4 @@ form.addEventListener('submit', (event) => {
 
 window.addEventListener('hashchange', render);
 
-run(async () => {});
+load().catch((err) => showError(err.message));
