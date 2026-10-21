@@ -1,5 +1,37 @@
 # Claude-todo-demo
 
+## Todo-App
+
+Kleine Todo-App: Todos anlegen, abhaken, bearbeiten (Doppelklick oder ✎, Enter speichert, Esc bricht ab), löschen und nach *Alle / Offen / Erledigt* filtern. Die Daten liegen in SQLite und überleben einen Neustart.
+
+**Stack:** Node.js ≥ 22.13, Express, das eingebaute `node:sqlite`, Frontend ohne Framework, Tests mit `node:test`.
+
+```bash
+npm install
+npm start        # http://localhost:3000
+npm run dev      # mit automatischem Neustart bei Änderungen
+npm test
+```
+
+| Variable | Standard | Zweck |
+|---|---|---|
+| `PORT` | `3000` | Port des Servers |
+| `DB_PATH` | `data/todos.db` | Pfad der SQLite-Datei (Ordner wird angelegt) |
+
+### API
+
+| Methode | Pfad | Body | Antwort |
+|---|---|---|---|
+| GET | `/api/todos?filter=all\|open\|done` | – | `200` Liste |
+| POST | `/api/todos` | `{ "title": "…" }` | `201` neues Todo |
+| PATCH | `/api/todos/:id` | `{ "title"?: "…", "done"?: true }` | `200` geändertes Todo |
+| DELETE | `/api/todos/:id` | – | `204` |
+
+Ein Todo sieht so aus: `{ "id": 1, "title": "Milch kaufen", "done": false, "createdAt": "2026-10-21T13:23:55.384Z" }`.
+Titel werden getrimmt und dürfen nicht leer und höchstens 200 Zeichen lang sein. Fehler kommen als `{ "error": "…" }` mit `400` (ungültige Eingabe) oder `404` (unbekannte ID).
+
+`node:sqlite` ist in Node 22 noch als experimentell markiert; die Scripts blenden die Warnung dazu aus.
+
 ## Claude Code: ECC-Plugin
 
 `.claude/settings.json` deklariert eine eigene Marketplace `ecc` direkt in der Datei (Quelltyp `settings`) und schaltet das Plugin `ecc@ecc` aus [affaan-m/ECC](https://github.com/affaan-m/ECC) ein. Es bringt Agenten, Skills, Befehle und Hooks mit.

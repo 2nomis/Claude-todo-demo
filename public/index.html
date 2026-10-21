@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Todos</h1>
+
+    <form id="new-todo" class="new-todo" autocomplete="off">
+      <label for="new-title" class="visually-hidden">Neues Todo</label>
+      <input id="new-title" name="title" type="text" maxlength="200" placeholder="Was ist zu tun?" required>
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <nav class="filters" aria-label="Filter">
+      <a href="#/all" data-filter="all">Alle</a>
+      <a href="#/open" data-filter="open">Offen</a>
+      <a href="#/done" data-filter="done">Erledigt</a>
+    </nav>
+
+    <ul id="list" class="list" aria-live="polite"></ul>
+    <p id="empty" class="empty" hidden>Keine Todos.</p>
+
+    <footer class="footer">
+      <span id="count"></span>
+    </footer>
+  </main>
+
+  <template id="item-template">
+    <li class="item">
+      <input type="checkbox" class="toggle">
+      <span class="title"></span>
+      <button type="button" class="edit" aria-label="Bearbeiten">✎</button>
+      <button type="button" class="delete" aria-label="Löschen">✕</button>
+    </li>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
