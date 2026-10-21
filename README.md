@@ -9,6 +9,22 @@
 - **Hook-Profil:** `ECC_HOOK_PROFILE=minimal`. Hooks, die nur zu `standard`/`strict` gehören (z. B. Desktop-Benachrichtigung, Doc-Datei-Warnung, Config-Schutz), laufen damit nicht.
 - **Zusätzlich abgeschaltet** über `ECC_DISABLED_HOOKS`: `stop:cost-tracker` (Kosten-Telemetrie) und `stop:evaluate-session` (Musterextraktion für „Continuous Learning“).
 
+### Einrichten
+
+Die Projekteinstellungen melden die Marketplace an und schalten das Plugin ein, **installieren es aber nicht**. Jede Person muss das einmal selbst tun, im Repo-Ordner und nachdem sie dem Ordner vertraut hat:
+
+```bash
+claude plugin install ecc@ecc --scope project
+```
+
+Ohne diesen Schritt meldet Claude Code das Plugin als „enabled in project settings but isn't installed“.
+
+**Cloud-Sitzungen** (claude.ai/code) laden Plugins aus der `.claude/settings.json` eines Repos laut Doku gar nicht. Dort ist ECC nur über server-verwaltete Einstellungen der Organisation verfügbar.
+
+### Kosten
+
+Gemessen in einer neuen Sitzung: Die erste Anfrage hatte mit ECC etwa 8.500 Tokens mehr Kontext als ohne (50.569 statt 42.110). `claude plugin details ecc` schätzt den Anteil, der immer geladen wird, auf bis zu etwa 44.800 Tokens.
+
 ### ECC abschalten
 
 - Nur die Hooks: `"ECC_HOOKS_ENABLED": "false"` unter `env` setzen.
