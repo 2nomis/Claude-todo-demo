@@ -11,8 +11,9 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `src/db.js` | SQLite-Datenschicht (`openDb`, list/create/update/remove, Filter all/open/done) |
 | `src/app.js` | Express-App `createApp(db)`: REST-API unter `/api/todos`, Validierung, JSON-Fehler `{ error }` |
 | `src/server.js` | Start; `PORT` (3000), `HOST` (`127.0.0.1`), `DB_PATH` (`data/todos.db`) |
+| `src/url.js` | `formatUrl(host, port)` für die Startmeldung (IPv6 in eckigen Klammern) |
 | `public/` | `index.html`, `app.js`, `style.css` |
-| `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port) |
+| `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port), `url.test.js` |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein |
 
 ```bash
@@ -32,6 +33,7 @@ Verhalten, das bewusst so ist:
 - Bei belegtem oder ungültigem `PORT` beendet sich der Server mit Exit-Code 1 und einer klaren Meldung statt mit Stacktrace. Achtung: In Express 5 ruft `app.listen` den Callback auch im Fehlerfall auf (mit `err`).
 - Der Server lauscht standardmäßig nur auf `127.0.0.1`; die App hat keine Anmeldung, daher nur bewusst mit `HOST=0.0.0.0` freigeben.
 - Schlägt eine Aktion fehl (abhaken, löschen, anlegen), zeigt die Liste wieder den letzten bekannten Stand statt der abgelehnten Änderung.
+- Tastaturfokus: `render()` baut die Liste neu auf und setzt den Fokus danach zurück (gleiches Todo, sonst das an derselben Position, bei leerer Liste ins Eingabefeld). Neue Bedienelemente in einem Todo brauchen eine eindeutige erste CSS-Klasse, über die sie wiedergefunden werden.
 - Der Server hängt beim Beenden nicht an offenen Keep-Alive-Verbindungen (gemessen: 9 ms); dafür ist kein Extra-Code nötig.
 
 Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Änderungen an `public/` im Browser prüfen.
