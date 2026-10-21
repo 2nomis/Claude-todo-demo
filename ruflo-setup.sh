@@ -30,10 +30,17 @@ init_project() {
     ruflo init --no-global --no-skills-sh --all-agents </dev/null
 }
 
-# ruflo-core is not installed by init
-install_core_plugin() {
-    claude plugin list 2>/dev/null | grep -q 'ruflo-core@ruflo' \
-        || claude plugin install ruflo-core@ruflo --scope project
+# Claude Code only registers the ruflo marketplace from settings.json on an interactive
+# start, so cloud sessions add it here; init also skips ruflo-core
+install_plugins() {
+    claude plugin marketplace list 2>/dev/null | grep -q 'ruflo' \
+        || claude plugin marketplace add ruvnet/ruflo --scope project || return 1
+    local installed plugin
+    installed=$(claude plugin list 2>/dev/null)
+    for plugin in ruflo-core ruflo-console ruflo-mods ruflo-swarm; do
+        grep -q "$plugin@ruflo" <<<"$installed" \
+            || claude plugin install "$plugin@ruflo" --scope project || return 1
+    done
 }
 
 # MCP server: global binary + tool limit, both in .mcp.json and the local registration
@@ -82,7 +89,45 @@ os.replace(tmp, path)
 EOF
 }
 
+# Servers from a repository's .mcp.json wait for approval; Claude Code reads that approval
+# only from user settings, so a cloud session (no approval prompt) approves claude-flow here
+approve_mcp() {
+    python3 -I - "$HOME/.claude/settings.json" <<'EOF'
+import json, os, sys, tempfile
+path = sys.argv[1]
+try:
+    cfg = json.load(open(path))
+except FileNotFoundError:
+    cfg = {}
+approved = cfg.get("enabledMcpjsonServers") or []
+if "claude-flow" in approved:
+    sys.exit(0)
+cfg["enabledMcpjsonServers"] = approved + ["claude-flow"]
+os.makedirs(os.path.dirname(path), exist_ok=True)
+fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path))
+with os.fdopen(fd, "w") as f:
+    json.dump(cfg, f, indent=2)
+    f.write("\n")
+os.replace(tmp, path)
+EOF
+}
+
 init_git() { [ -d .git ] || git init -q; }
+
+# Download the embedding model once before the daemon and the memory import need it:
+# parallel first downloads left a corrupt model ("protobuf parsing failed"). warmup still
+# reports Ready on a corrupt model (it falls back to wasm), so also check for a load error
+model_ok() {
+    local out
+    out=$(timeout 300 ruflo embeddings warmup </dev/null 2>&1)
+    grep -q 'Ready' <<<"$out" && ! grep -q 'Failed to load model' <<<"$out"
+}
+
+warm_model() {
+    model_ok && return 0
+    rm -rf "$HOME/.cache/ruflo/models/Xenova/all-MiniLM-L6-v2"
+    model_ok
+}
 
 start_daemon() { ruflo daemon status 2>/dev/null | grep -q RUNNING || ruflo daemon start </dev/null; }
 
@@ -106,11 +151,13 @@ if ! command -v ruflo >/dev/null; then
 fi
 
 step "ruflo init" init_project
-step "install ruflo-core plugin" install_core_plugin
+step "install ruflo plugins" install_plugins
 step "fix .mcp.json" fix_mcp_json
 step "register MCP server" register_mcp
 step "disable ruflo-core MCP server" disable_plugin_mcp
+step "approve MCP server" approve_mcp
 step "git init" init_git
+step "download embedding model" warm_model
 step "start daemon" start_daemon
 step "init swarm" init_swarm
 step "restore memory" restore_memory
