@@ -12,7 +12,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `src/app.js` | Express-App `createApp(db)`: REST-API unter `/api/todos`, Validierung, JSON-Fehler `{ error }` |
 | `src/server.js` | Start; `PORT` (3000), `HOST` (`127.0.0.1`), `DB_PATH` (`data/todos.db`) |
 | `public/` | `index.html`, `app.js`, `style.css` |
-| `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start bei belegtem Port) |
+| `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port) |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein |
 
 ```bash
