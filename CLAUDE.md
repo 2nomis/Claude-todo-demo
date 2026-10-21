@@ -14,7 +14,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `src/url.js` | `formatUrl(host, port)` für die Startmeldung (IPv6 in eckigen Klammern) |
 | `public/` | `index.html`, `app.js`, `style.css` |
 | `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port), `url.test.js` |
-| `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein |
+| `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein; auch als Setup-Skript für Cloud-Umgebungen (ohne Repo, Sitzung oder Zugangsdaten) |
 
 ```bash
 npm install
@@ -43,7 +43,8 @@ Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Än
 - Eingerichtet in `.claude/settings.json`: Marketplace `ecc` direkt in der Datei (Quelltyp `settings`), Plugin `ecc@ecc` festgelegt auf Commit `c05b2d6614f62f6db0047669aa4eefb223d478f9` (Tag `v2.2.3`).
 - Hook-Profil `ECC_HOOK_PROFILE=minimal`, dazu `ECC_DISABLED_HOOKS=stop:cost-tracker,stop:evaluate-session`. Nicht auf `standard` stellen: dessen „Fact-Forcing Gate“ blockiert schon einfache Write- und Bash-Aufrufe.
 - Die Projekteinstellungen installieren das Plugin nicht. Pro Rechner einmal `claude plugin install ecc@ecc --scope project` oder für alle Projekte `bash tools/ecc/setup-global.sh`.
-- Cloud-Sitzungen laden Plugins aus Repo-Einstellungen laut Doku nicht. Im Cloud-Container lädt ECC nur, wenn es dort in `~/.claude` installiert wurde; der Container ist flüchtig.
+- Cloud-Sitzungen laden Plugins aus Repo-Einstellungen laut Doku nicht. Im Cloud-Container lädt ECC nur, wenn es dort in `~/.claude` installiert wurde; der Container ist flüchtig. Dafür den Inhalt von `tools/ecc/setup-global.sh` als Setup-Skript der Cloud-Umgebung eintragen.
+- `setup-global.sh` registriert ECC über eine lokale Marketplace-Datei (`~/.claude/ecc-marketplace/`, Quelltyp `directory`) mit `claude plugin marketplace add`; so ist keine Claude-Sitzung nötig. In diesem Repo überschreibt die Projekt-Marketplace `ecc` (Quelltyp `settings`) diesen Eintrag; beide zeigen auf denselben Commit, getestet.
 - Kontextkosten: etwa 8.500 Tokens pro Sitzung. Abschalten: `"ecc@ecc": false` in `.claude/settings.local.json`.
 - Neun Namen gibt es als Befehl und als Skill (u. a. `ecc-guide`, `security-scan`, `plan-canvas`, `orch-*`); `/ecc:<name>` lädt dann immer den Befehl.
 - Bewährter Ablauf: `/ecc:plan` → `/ecc:tdd-workflow` → `/ecc:code-review`. `/ecc:code-review` mit PR-Nummer postet ein Review auf GitHub.

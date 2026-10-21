@@ -50,7 +50,11 @@ Einmal pro Rechner ausführen (macOS/Linux, braucht `claude`, `git` und `python3
 bash tools/ecc/setup-global.sh
 ```
 
-Das Skript trägt dieselbe festgelegte ECC-Version und dieselben Hook-Einstellungen in `~/.claude/settings.json` ein. Vorher legt es eine Sicherung an, und andere Einträge bleiben erhalten. Danach installiert es `ecc@ecc` für alle Projekte (`--scope user`). Mehrfaches Ausführen ist unschädlich. Für ein Update `ECC_REF` und `ECC_SHA` im Skript anheben und es erneut ausführen.
+Das Skript legt in `~/.claude/ecc-marketplace/` eine Marketplace-Datei an, die ECC auf denselben festen Commit festlegt, und meldet sie mit `claude plugin marketplace add` an. In `~/.claude/settings.json` schaltet es `ecc@ecc` ein und setzt das Hook-Profil `minimal`; vorher legt es eine Sicherung an, andere Einträge bleiben erhalten. Danach installiert es `ecc@ecc` für alle Projekte (`--scope user`). Es braucht weder dieses Repo noch eine Claude-Sitzung oder Zugangsdaten. Mehrfaches Ausführen ist unschädlich. Für ein Update `ECC_REF` und `ECC_SHA` im Skript anheben und es erneut ausführen.
+
+### In Cloud-Chats (claude.ai/code)
+
+Jeder Cloud-Chat startet in einem frischen Container, ohne ECC. Damit ECC dort automatisch da ist, den **gesamten Inhalt** von `tools/ecc/setup-global.sh` als Setup-Skript der Cloud-Umgebung eintragen: Titelleiste des Chats → Umgebung → *Edit* → *Setup script*. Neue Chats in dieser Umgebung installieren ECC dann beim Start. Der Inhalt wird eingefügt statt `bash tools/ecc/setup-global.sh` aufzurufen, weil das Repo beim Setup noch nicht ausgecheckt sein muss.
 
 ### Nur für dieses Repo einrichten
 

@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 # Installs the ECC plugin for every project on this machine (user scope).
+# Works locally and as a cloud environment setup script; it does not need
+# this repository, a Claude session or API credentials.
 #
-# - Adds the pinned ECC marketplace, enables ecc@ecc and sets the hook env
-#   (minimal profile) in your user settings, keeping everything else as is.
-# - Backs up the settings file before changing it.
-# - Safe to run again; it only updates the ECC entries.
+# - Writes a local marketplace file that pins ECC to a fixed commit and
+#   registers it with `claude plugin marketplace add`.
+# - Enables ecc@ecc and sets the hook env (minimal profile) in your user
+#   settings, keeping everything else as is (with a backup).
+# - Safe to run again.
 #
 # Usage: bash tools/ecc/setup-global.sh
 
@@ -16,16 +19,14 @@ ECC_SHA="c05b2d6614f62f6db0047669aa4eefb223d478f9"
 
 CONFIG_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 SETTINGS="$CONFIG_DIR/settings.json"
+MARKETPLACE_DIR="$CONFIG_DIR/ecc-marketplace"
 
-if ! command -v claude >/dev/null 2>&1; then
-  echo "Fehler: 'claude' wurde nicht gefunden. Bitte zuerst Claude Code installieren." >&2
-  exit 1
-fi
-
-if ! command -v git >/dev/null 2>&1; then
-  echo "Fehler: 'git' wurde nicht gefunden. Claude Code braucht git, um ECC herunterzuladen." >&2
-  exit 1
-fi
+for tool in claude git; do
+  if ! command -v "$tool" >/dev/null 2>&1; then
+    echo "Fehler: '$tool' wurde nicht gefunden." >&2
+    exit 1
+  fi
+done
 
 if command -v python3 >/dev/null 2>&1; then
   JSON_TOOL=python3
@@ -36,41 +37,49 @@ else
   exit 1
 fi
 
-mkdir -p "$CONFIG_DIR"
+mkdir -p "$MARKETPLACE_DIR/.claude-plugin"
+cat > "$MARKETPLACE_DIR/.claude-plugin/marketplace.json" <<EOF
+{
+  "name": "ecc",
+  "owner": { "name": "local" },
+  "plugins": [
+    {
+      "name": "ecc",
+      "description": "ECC $ECC_REF, pinned to a fixed commit",
+      "source": {
+        "source": "github",
+        "repo": "$ECC_REPO",
+        "ref": "$ECC_REF",
+        "sha": "$ECC_SHA"
+      }
+    }
+  ]
+}
+EOF
+
 if [ -f "$SETTINGS" ]; then
   BACKUP="$SETTINGS.bak-$(date +%Y%m%d-%H%M%S)"
   cp "$SETTINGS" "$BACKUP"
   echo "Sicherung: $BACKUP"
 fi
 
-export SETTINGS ECC_REPO ECC_REF ECC_SHA
-
+# Drops any earlier "ecc" marketplace entry (it is registered again below),
+# enables the plugin and sets the hook env.
+export SETTINGS
 if [ "$JSON_TOOL" = python3 ]; then
   python3 - <<'PY'
-import json, os
+import json, os, sys
 
 path = os.environ["SETTINGS"]
 data = {}
 if os.path.exists(path) and os.path.getsize(path) > 0:
-    with open(path) as f:
-        data = json.load(f)
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except json.JSONDecodeError as err:
+        sys.exit(f"Fehler: {path} ist kein gültiges JSON ({err}). Bitte korrigieren und erneut ausführen.")
 
-data.setdefault("extraKnownMarketplaces", {})["ecc"] = {
-    "source": {
-        "source": "settings",
-        "name": "ecc",
-        "plugins": [{
-            "name": "ecc",
-            "description": "ECC " + os.environ["ECC_REF"] + ", pinned to a fixed commit",
-            "source": {
-                "source": "github",
-                "repo": os.environ["ECC_REPO"],
-                "ref": os.environ["ECC_REF"],
-                "sha": os.environ["ECC_SHA"],
-            },
-        }],
-    }
-}
+data.get("extraKnownMarketplaces", {}).pop("ecc", None)
 data.setdefault("enabledPlugins", {})["ecc@ecc"] = True
 env = data.setdefault("env", {})
 env["ECC_HOOK_PROFILE"] = "minimal"
@@ -83,21 +92,18 @@ PY
 else
   node - <<'JS'
 const fs = require('fs');
-const { SETTINGS: path, ECC_REPO, ECC_REF, ECC_SHA } = process.env;
-const data = fs.existsSync(path) && fs.statSync(path).size > 0
-  ? JSON.parse(fs.readFileSync(path, 'utf8')) : {};
+const path = process.env.SETTINGS;
+let data = {};
+if (fs.existsSync(path) && fs.statSync(path).size > 0) {
+  try {
+    data = JSON.parse(fs.readFileSync(path, 'utf8'));
+  } catch (err) {
+    console.error(`Fehler: ${path} ist kein gültiges JSON (${err.message}). Bitte korrigieren und erneut ausführen.`);
+    process.exit(1);
+  }
+}
 
-(data.extraKnownMarketplaces ??= {}).ecc = {
-  source: {
-    source: 'settings',
-    name: 'ecc',
-    plugins: [{
-      name: 'ecc',
-      description: `ECC ${ECC_REF}, pinned to a fixed commit`,
-      source: { source: 'github', repo: ECC_REPO, ref: ECC_REF, sha: ECC_SHA },
-    }],
-  },
-};
+if (data.extraKnownMarketplaces) delete data.extraKnownMarketplaces.ecc;
 (data.enabledPlugins ??= {})['ecc@ecc'] = true;
 const env = (data.env ??= {});
 env.ECC_HOOK_PROFILE = 'minimal';
@@ -108,10 +114,8 @@ JS
 fi
 echo "Einstellungen aktualisiert: $SETTINGS"
 
-# Claude Code registers marketplaces from settings when a session starts,
-# so run one minimal session before installing.
-echo "Melde die ECC-Marketplace an (eine kurze Claude-Sitzung) ..."
-(cd "$CONFIG_DIR" && claude -p "Antworte nur mit OK" --max-turns 1 </dev/null >/dev/null)
+echo "Melde die ECC-Marketplace an ..."
+claude plugin marketplace add "$MARKETPLACE_DIR"
 
 echo "Installiere ecc@ecc für alle Projekte ..."
 claude plugin install ecc@ecc --scope user
