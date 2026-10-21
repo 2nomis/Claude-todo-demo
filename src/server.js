@@ -2,6 +2,7 @@ const path = require('node:path');
 
 const { openDb } = require('./db');
 const { createApp } = require('./app');
+const { formatUrl } = require('./url');
 
 const portSetting = process.env.PORT || '3000';
 // Only reachable from this machine unless HOST is set (e.g. HOST=0.0.0.0).
@@ -19,7 +20,7 @@ const db = openDb(dbPath);
 // that case is reported by the 'error' handler below.
 const server = createApp(db).listen(port, host, (err) => {
   if (err) return;
-  console.log(`Todo-App läuft auf http://${host}:${server.address().port} (Daten: ${dbPath})`);
+  console.log(`Todo-App läuft auf ${formatUrl(host, server.address().port)} (Daten: ${dbPath})`);
 });
 
 server.on('error', (err) => {

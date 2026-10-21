@@ -53,7 +53,32 @@ async function load() {
   render();
 }
 
+// Remembers which control inside the list has keyboard focus, so render()
+// can put it back after rebuilding the list.
+function focusedControl() {
+  const el = document.activeElement;
+  const item = el && el.closest('.item');
+  if (!item || !list.contains(item)) return null;
+  const control = el.classList.contains('edit-field') ? 'edit' : el.classList[0];
+  return { id: item.dataset.id, index: [...list.children].indexOf(item), control };
+}
+
+// Same todo if it is still visible, otherwise the one now at its position
+// (or the last one); with an empty list, the new-todo input.
+function restoreFocus(focus) {
+  if (!focus) return;
+  const items = [...list.children];
+  const target = items.find((item) => item.dataset.id === focus.id)
+    ?? items[Math.min(focus.index, items.length - 1)];
+  if (!target) {
+    input.focus();
+    return;
+  }
+  (target.querySelector(`.${focus.control}`) ?? target.querySelector('.toggle')).focus();
+}
+
 function render() {
+  const focus = focusedControl();
   const filter = currentFilter();
   const visible = todos.filter((t) => filter === 'all' || (filter === 'done') === t.done);
 
@@ -66,6 +91,7 @@ function render() {
 
   list.replaceChildren(...visible.map(renderItem));
   empty.hidden = visible.length > 0;
+  restoreFocus(focus);
 
   const open = todos.filter((t) => !t.done).length;
   count.textContent = open === 1 ? '1 offen' : `${open} offen`;
@@ -76,6 +102,7 @@ function renderItem(todo) {
   const toggle = item.querySelector('.toggle');
   const title = item.querySelector('.title');
 
+  item.dataset.id = String(todo.id);
   item.classList.toggle('done', todo.done);
   toggle.checked = todo.done;
   toggle.setAttribute('aria-label', `„${todo.title}“ erledigt`);
