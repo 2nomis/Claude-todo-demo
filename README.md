@@ -8,14 +8,15 @@ Kleine Todo-App: Todos anlegen, abhaken, bearbeiten (Doppelklick oder ✎, Enter
 
 ```bash
 npm install
-npm start        # http://localhost:3000
+npm start        # http://127.0.0.1:3000
 npm run dev      # mit automatischem Neustart bei Änderungen
 npm test
 ```
 
 | Variable | Standard | Zweck |
 |---|---|---|
-| `PORT` | `3000` | Port des Servers |
+| `PORT` | `3000` | Port des Servers (0–65535; `0` wählt einen freien Port) |
+| `HOST` | `127.0.0.1` | Adresse, auf der der Server lauscht. Standardmäßig nur vom eigenen Rechner erreichbar; `HOST=0.0.0.0` macht die App im Netzwerk erreichbar (ohne Anmeldung!) |
 | `DB_PATH` | `data/todos.db` | Pfad der SQLite-Datei (Ordner wird angelegt) |
 
 ### API

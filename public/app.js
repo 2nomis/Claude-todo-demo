@@ -35,6 +35,8 @@ function showError(message) {
 }
 
 // Runs an API action, then reloads the list; errors end up in the alert box.
+// On failure the list is re-rendered from the last known state, so controls
+// like a clicked checkbox don't keep showing a change the server rejected.
 async function run(action) {
   try {
     showError('');
@@ -42,6 +44,7 @@ async function run(action) {
     await load();
   } catch (err) {
     showError(err.message);
+    render();
   }
 }
 
