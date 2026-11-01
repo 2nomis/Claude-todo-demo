@@ -1,4 +1,5 @@
 [
+  { "typ": "kasten", "text": "WENN DEIN HUND NACH DEM GASSI SOFORT AUS DEM GESCHIRR WILL", "von": 0, "bis": 3.13, "y": 150, "groesse": 54, "breite": 960, "sofort": true },
   { "typ": "emoji", "zeichen": "🤨", "von": 7.44, "bis": 9.28, "x": 935, "y": 300, "groesse": 190 },
   { "typ": "pfeil", "von": 11.84, "bis": 13.76, "x0": 980, "y0": 420, "x1": 770, "y1": 760 }
 ]

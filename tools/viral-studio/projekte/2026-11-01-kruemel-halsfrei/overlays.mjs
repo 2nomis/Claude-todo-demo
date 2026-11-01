@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 import { createCanvas, GlobalFonts } from "@napi-rs/canvas";
 const P = process.argv[2], F = 30, W = 1080, H = 1920;
 GlobalFonts.registerFromPath("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", "Emoji");
+GlobalFonts.registerFromPath(new URL("../../schriften/Figtree-ExtraBold.ttf", import.meta.url).pathname, "FigtreeXB");
 const liste = JSON.parse(fs.readFileSync(`${P}/overlays.json`));
 const backOut = (u) => { const s = 2.2; u -= 1; return u * u * ((s + 1) * u + s) + 1; };
 const clip = (v) => Math.max(0, Math.min(1, v));
@@ -16,9 +17,21 @@ liste.forEach((o, n) => {
   fs.mkdirSync(dir);
   for (let f = 0; f < N; f++) {
     const t = f / F, c = createCanvas(W, H), g = c.getContext("2d");
-    const s = backOut(clip(t / 0.2)), a = clip(t / 0.08) * clip((o.bis - o.von - t) / 0.12);
+    const s = o.sofort ? 1 : backOut(clip(t / 0.2)), a = (o.sofort ? 1 : clip(t / 0.08)) * clip((o.bis - o.von - t) / 0.12);
     g.globalAlpha = a;
-    if (o.typ === "emoji") {
+    if (o.typ === "kasten") {
+      // gelber Kasten mit schwarzem Text, oben mittig; Zeilen umbrechen bei o.breite
+      const gr = o.groesse || 62, br = o.breite || 900, pad = 34, zh = gr * 1.12;
+      g.font = `${gr}px FigtreeXB`;
+      const zeilen = [];
+      for (const w of o.text.split(" ")) { const l = zeilen.at(-1); if (l && g.measureText(l + " " + w).width <= br - 2 * pad) zeilen[zeilen.length - 1] = l + " " + w; else zeilen.push(w); }
+      const kw = Math.max(...zeilen.map((z) => g.measureText(z).width)) + 2 * pad, kh = zeilen.length * zh + 2 * pad - (zh - gr);
+      g.translate(W / 2, o.y + kh / 2); g.scale(s, s); g.translate(-kw / 2, -kh / 2);
+      g.shadowColor = "rgba(0,0,0,0.35)"; g.shadowBlur = 20; g.shadowOffsetY = 6;
+      g.beginPath(); g.roundRect(0, 0, kw, kh, 22); g.fillStyle = "#FFD400"; g.fill();
+      g.shadowColor = "transparent"; g.fillStyle = "#111111"; g.textAlign = "center"; g.textBaseline = "top";
+      zeilen.forEach((z, i) => g.fillText(z, kw / 2, pad + i * zh));
+    } else if (o.typ === "emoji") {
       g.translate(o.x, o.y); g.scale(s, s);
       g.font = `${o.groesse}px Emoji`; g.textAlign = "center"; g.textBaseline = "middle";
       g.shadowColor = "rgba(0,0,0,0.35)"; g.shadowBlur = 18; g.shadowOffsetY = 6;
