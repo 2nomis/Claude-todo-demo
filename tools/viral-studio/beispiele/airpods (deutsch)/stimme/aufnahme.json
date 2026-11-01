@@ -1,0 +1,1414 @@
+{
+  "signatur": "1a8aded4cd20",
+  "anbieter": "elevenlabs",
+  "parameter": {
+    "id": "nPczCjzI2devNBz1zQrb",
+    "modell": "eleven_v4",
+    "stabilitaet": 0.35,
+    "aehnlichkeit": 0.7,
+    "stil": 0,
+    "geschwindigkeit": 1.12
+  },
+  "woerter": [
+    {
+      "text": "Ehrpods",
+      "anfang": 0,
+      "ende": 0.56
+    },
+    {
+      "text": "können",
+      "anfang": 0.64,
+      "ende": 0.88
+    },
+    {
+      "text": "ein",
+      "anfang": 0.96,
+      "ende": 1.04
+    },
+    {
+      "text": "Flugzeugtriebwerk",
+      "anfang": 1.12,
+      "ende": 2
+    },
+    {
+      "text": "verstummen",
+      "anfang": 2.08,
+      "ende": 2.48
+    },
+    {
+      "text": "lassen,",
+      "anfang": 2.64,
+      "ende": 3.12
+    },
+    {
+      "text": "und",
+      "anfang": 3.2,
+      "ende": 3.28
+    },
+    {
+      "text": "sie",
+      "anfang": 3.36,
+      "ende": 3.44
+    },
+    {
+      "text": "blockieren",
+      "anfang": 3.6,
+      "ende": 4
+    },
+    {
+      "text": "den",
+      "anfang": 4.08,
+      "ende": 4.16
+    },
+    {
+      "text": "Schall",
+      "anfang": 4.24,
+      "ende": 4.4
+    },
+    {
+      "text": "nicht",
+      "anfang": 4.44,
+      "ende": 4.56
+    },
+    {
+      "text": "einmal.",
+      "anfang": 4.64,
+      "ende": 5.32
+    },
+    {
+      "text": "Wohin",
+      "anfang": 5.6,
+      "ende": 5.92
+    },
+    {
+      "text": "geht",
+      "anfang": 6,
+      "ende": 6.16
+    },
+    {
+      "text": "also",
+      "anfang": 6.28,
+      "ende": 6.4
+    },
+    {
+      "text": "der",
+      "anfang": 6.48,
+      "ende": 6.56
+    },
+    {
+      "text": "Lärm?",
+      "anfang": 6.6,
+      "ende": 7.2
+    },
+    {
+      "text": "Nirgendwohin.",
+      "anfang": 7.52,
+      "ende": 8.48
+    },
+    {
+      "text": "Denn",
+      "anfang": 8.72,
+      "ende": 8.8
+    },
+    {
+      "text": "deine",
+      "anfang": 8.88,
+      "ende": 9.12
+    },
+    {
+      "text": "Ehrpods",
+      "anfang": 9.2,
+      "ende": 9.68
+    },
+    {
+      "text": "entfernen",
+      "anfang": 9.76,
+      "ende": 10.32
+    },
+    {
+      "text": "den",
+      "anfang": 10.4,
+      "ende": 10.48
+    },
+    {
+      "text": "Lärm",
+      "anfang": 10.52,
+      "ende": 10.72
+    },
+    {
+      "text": "gar",
+      "anfang": 10.8,
+      "ende": 10.88
+    },
+    {
+      "text": "nicht:",
+      "anfang": 10.96,
+      "ende": 11.52
+    },
+    {
+      "text": "Sie",
+      "anfang": 11.6,
+      "ende": 11.68
+    },
+    {
+      "text": "spielen",
+      "anfang": 11.76,
+      "ende": 12.08
+    },
+    {
+      "text": "einen",
+      "anfang": 12.12,
+      "ende": 12.4
+    },
+    {
+      "text": "zweiten",
+      "anfang": 12.44,
+      "ende": 12.8
+    },
+    {
+      "text": "Ton",
+      "anfang": 12.88,
+      "ende": 13.04
+    },
+    {
+      "text": "darüber.",
+      "anfang": 13.12,
+      "ende": 13.8
+    },
+    {
+      "text": "Sie",
+      "anfang": 14.08,
+      "ende": 14.16
+    },
+    {
+      "text": "hören",
+      "anfang": 14.24,
+      "ende": 14.48
+    },
+    {
+      "text": "dem",
+      "anfang": 14.56,
+      "ende": 14.64
+    },
+    {
+      "text": "Lärm",
+      "anfang": 14.72,
+      "ende": 14.96
+    },
+    {
+      "text": "zu",
+      "anfang": 15.04,
+      "ende": 15.28
+    },
+    {
+      "text": "und",
+      "anfang": 15.52,
+      "ende": 15.6
+    },
+    {
+      "text": "spielen",
+      "anfang": 15.68,
+      "ende": 16
+    },
+    {
+      "text": "sein",
+      "anfang": 16.12,
+      "ende": 16.24
+    },
+    {
+      "text": "genaues",
+      "anfang": 16.36,
+      "ende": 16.8
+    },
+    {
+      "text": "Gegenteil.",
+      "anfang": 16.88,
+      "ende": 17.44
+    },
+    {
+      "text": "Stell",
+      "anfang": 18.08,
+      "ende": 18.32
+    },
+    {
+      "text": "dir",
+      "anfang": 18.4,
+      "ende": 18.48
+    },
+    {
+      "text": "vor,",
+      "anfang": 18.56,
+      "ende": 18.747
+    },
+    {
+      "text": "du",
+      "anfang": 18.773,
+      "ende": 18.8
+    },
+    {
+      "text": "sitzt",
+      "anfang": 18.88,
+      "ende": 19.12
+    },
+    {
+      "text": "im",
+      "anfang": 19.16,
+      "ende": 19.2
+    },
+    {
+      "text": "Flugzeug,",
+      "anfang": 19.28,
+      "ende": 20.08
+    },
+    {
+      "text": "und",
+      "anfang": 20.12,
+      "ende": 20.16
+    },
+    {
+      "text": "das",
+      "anfang": 20.24,
+      "ende": 20.32
+    },
+    {
+      "text": "Triebwerk",
+      "anfang": 20.4,
+      "ende": 20.88
+    },
+    {
+      "text": "ist",
+      "anfang": 20.96,
+      "ende": 21.04
+    },
+    {
+      "text": "ein",
+      "anfang": 21.12,
+      "ende": 21.2
+    },
+    {
+      "text": "einziges,",
+      "anfang": 21.36,
+      "ende": 22.16
+    },
+    {
+      "text": "langes,",
+      "anfang": 22.28,
+      "ende": 22.8
+    },
+    {
+      "text": "tiefes",
+      "anfang": 22.84,
+      "ende": 23.28
+    },
+    {
+      "text": "Dröhnen.",
+      "anfang": 23.36,
+      "ende": 23.84
+    },
+    {
+      "text": "Schall",
+      "anfang": 24.48,
+      "ende": 24.8
+    },
+    {
+      "text": "ist",
+      "anfang": 24.88,
+      "ende": 24.96
+    },
+    {
+      "text": "nur",
+      "anfang": 25.04,
+      "ende": 25.2
+    },
+    {
+      "text": "Luft,",
+      "anfang": 25.28,
+      "ende": 25.68
+    },
+    {
+      "text": "die",
+      "anfang": 25.72,
+      "ende": 25.76
+    },
+    {
+      "text": "an",
+      "anfang": 25.84,
+      "ende": 25.92
+    },
+    {
+      "text": "deinem",
+      "anfang": 25.96,
+      "ende": 26.16
+    },
+    {
+      "text": "Trommelfell",
+      "anfang": 26.24,
+      "ende": 26.8
+    },
+    {
+      "text": "drückt",
+      "anfang": 26.88,
+      "ende": 27.12
+    },
+    {
+      "text": "und",
+      "anfang": 27.2,
+      "ende": 27.36
+    },
+    {
+      "text": "zieht,",
+      "anfang": 27.44,
+      "ende": 28
+    },
+    {
+      "text": "hunderte",
+      "anfang": 28.08,
+      "ende": 28.48
+    },
+    {
+      "text": "Male",
+      "anfang": 28.56,
+      "ende": 28.8
+    },
+    {
+      "text": "pro",
+      "anfang": 28.88,
+      "ende": 28.96
+    },
+    {
+      "text": "Sekunde.",
+      "anfang": 29,
+      "ende": 29.52
+    },
+    {
+      "text": "Außen",
+      "anfang": 30.16,
+      "ende": 30.56
+    },
+    {
+      "text": "an",
+      "anfang": 30.64,
+      "ende": 30.72
+    },
+    {
+      "text": "jedem",
+      "anfang": 30.8,
+      "ende": 31.04
+    },
+    {
+      "text": "Ehrpod",
+      "anfang": 31.12,
+      "ende": 31.6
+    },
+    {
+      "text": "sitzt",
+      "anfang": 31.64,
+      "ende": 31.88
+    },
+    {
+      "text": "ein",
+      "anfang": 31.92,
+      "ende": 32.08
+    },
+    {
+      "text": "winziges",
+      "anfang": 32.16,
+      "ende": 32.64
+    },
+    {
+      "text": "Mikrofon,",
+      "anfang": 32.72,
+      "ende": 33.68
+    },
+    {
+      "text": "und",
+      "anfang": 33.72,
+      "ende": 33.76
+    },
+    {
+      "text": "es",
+      "anfang": 33.84,
+      "ende": 33.92
+    },
+    {
+      "text": "hört",
+      "anfang": 34,
+      "ende": 34.16
+    },
+    {
+      "text": "dieses",
+      "anfang": 34.24,
+      "ende": 34.48
+    },
+    {
+      "text": "Dröhnen",
+      "anfang": 34.56,
+      "ende": 34.96
+    },
+    {
+      "text": "einen",
+      "anfang": 35.04,
+      "ende": 35.2
+    },
+    {
+      "text": "Sekundenbruchteil,",
+      "anfang": 35.28,
+      "ende": 36.56
+    },
+    {
+      "text": "bevor",
+      "anfang": 36.64,
+      "ende": 36.88
+    },
+    {
+      "text": "es",
+      "anfang": 36.96,
+      "ende": 37.04
+    },
+    {
+      "text": "dein",
+      "anfang": 37.08,
+      "ende": 37.28
+    },
+    {
+      "text": "Ohr",
+      "anfang": 37.32,
+      "ende": 37.44
+    },
+    {
+      "text": "erreicht.",
+      "anfang": 37.52,
+      "ende": 38
+    },
+    {
+      "text": "Ein",
+      "anfang": 38.64,
+      "ende": 38.8
+    },
+    {
+      "text": "Chip",
+      "anfang": 38.88,
+      "ende": 39.12
+    },
+    {
+      "text": "nimmt",
+      "anfang": 39.2,
+      "ende": 39.36
+    },
+    {
+      "text": "diese",
+      "anfang": 39.44,
+      "ende": 39.6
+    },
+    {
+      "text": "Welle",
+      "anfang": 39.68,
+      "ende": 39.92
+    },
+    {
+      "text": "und",
+      "anfang": 40.08,
+      "ende": 40.16
+    },
+    {
+      "text": "dreht",
+      "anfang": 40.24,
+      "ende": 40.4
+    },
+    {
+      "text": "sie",
+      "anfang": 40.48,
+      "ende": 40.56
+    },
+    {
+      "text": "auf",
+      "anfang": 40.6,
+      "ende": 40.64
+    },
+    {
+      "text": "den",
+      "anfang": 40.72,
+      "ende": 40.8
+    },
+    {
+      "text": "Kopf.",
+      "anfang": 40.88,
+      "ende": 41.48
+    },
+    {
+      "text": "Wo",
+      "anfang": 41.76,
+      "ende": 41.92
+    },
+    {
+      "text": "das",
+      "anfang": 42,
+      "ende": 42.08
+    },
+    {
+      "text": "Triebwerk",
+      "anfang": 42.16,
+      "ende": 42.64
+    },
+    {
+      "text": "drückt,",
+      "anfang": 42.72,
+      "ende": 43.36
+    },
+    {
+      "text": "zieht",
+      "anfang": 43.44,
+      "ende": 43.6
+    },
+    {
+      "text": "der",
+      "anfang": 43.68,
+      "ende": 43.76
+    },
+    {
+      "text": "Lautsprecher",
+      "anfang": 43.84,
+      "ende": 44.4
+    },
+    {
+      "text": "in",
+      "anfang": 44.44,
+      "ende": 44.48
+    },
+    {
+      "text": "deinem",
+      "anfang": 44.56,
+      "ende": 44.8
+    },
+    {
+      "text": "Ohr,",
+      "anfang": 44.88,
+      "ende": 45.28
+    },
+    {
+      "text": "genau",
+      "anfang": 45.36,
+      "ende": 45.76
+    },
+    {
+      "text": "gleich",
+      "anfang": 45.84,
+      "ende": 46.08
+    },
+    {
+      "text": "stark.",
+      "anfang": 46.16,
+      "ende": 46.56
+    },
+    {
+      "text": "Apple",
+      "anfang": 47.12,
+      "ende": 47.36
+    },
+    {
+      "text": "nennt",
+      "anfang": 47.44,
+      "ende": 47.6
+    },
+    {
+      "text": "das",
+      "anfang": 47.72,
+      "ende": 47.84
+    },
+    {
+      "text": "Anti-Lärm.",
+      "anfang": 48,
+      "ende": 48.72
+    },
+    {
+      "text": "Die",
+      "anfang": 49.28,
+      "ende": 49.36
+    },
+    {
+      "text": "beiden",
+      "anfang": 49.44,
+      "ende": 49.68
+    },
+    {
+      "text": "Wellen",
+      "anfang": 49.76,
+      "ende": 50.08
+    },
+    {
+      "text": "treffen",
+      "anfang": 50.16,
+      "ende": 50.4
+    },
+    {
+      "text": "sich",
+      "anfang": 50.44,
+      "ende": 50.56
+    },
+    {
+      "text": "in",
+      "anfang": 50.6,
+      "ende": 50.64
+    },
+    {
+      "text": "deinem",
+      "anfang": 50.72,
+      "ende": 50.96
+    },
+    {
+      "text": "Ohr",
+      "anfang": 51.04,
+      "ende": 51.28
+    },
+    {
+      "text": "und",
+      "anfang": 51.36,
+      "ende": 51.52
+    },
+    {
+      "text": "heben",
+      "anfang": 51.6,
+      "ende": 51.76
+    },
+    {
+      "text": "sich",
+      "anfang": 51.84,
+      "ende": 51.92
+    },
+    {
+      "text": "auf.",
+      "anfang": 52,
+      "ende": 52.4
+    },
+    {
+      "text": "Dein",
+      "anfang": 52.88,
+      "ende": 53.04
+    },
+    {
+      "text": "Trommelfell",
+      "anfang": 53.12,
+      "ende": 53.6
+    },
+    {
+      "text": "bewegt",
+      "anfang": 53.68,
+      "ende": 54
+    },
+    {
+      "text": "sich",
+      "anfang": 54.053,
+      "ende": 54.16
+    },
+    {
+      "text": "kaum,",
+      "anfang": 54.24,
+      "ende": 54.88
+    },
+    {
+      "text": "und",
+      "anfang": 54.96,
+      "ende": 55.04
+    },
+    {
+      "text": "genau",
+      "anfang": 55.16,
+      "ende": 55.44
+    },
+    {
+      "text": "das",
+      "anfang": 55.6,
+      "ende": 55.84
+    },
+    {
+      "text": "hörst",
+      "anfang": 55.92,
+      "ende": 56.08
+    },
+    {
+      "text": "du",
+      "anfang": 56.12,
+      "ende": 56.16
+    },
+    {
+      "text": "als",
+      "anfang": 56.24,
+      "ende": 56.32
+    },
+    {
+      "text": "Stille.",
+      "anfang": 56.4,
+      "ende": 57.04
+    },
+    {
+      "text": "Aber",
+      "anfang": 57.36,
+      "ende": 57.6
+    },
+    {
+      "text": "die",
+      "anfang": 57.64,
+      "ende": 57.68
+    },
+    {
+      "text": "Kopie",
+      "anfang": 57.76,
+      "ende": 58.16
+    },
+    {
+      "text": "ist",
+      "anfang": 58.28,
+      "ende": 58.4
+    },
+    {
+      "text": "nie",
+      "anfang": 58.48,
+      "ende": 58.64
+    },
+    {
+      "text": "perfekt.",
+      "anfang": 58.72,
+      "ende": 59.48
+    },
+    {
+      "text": "Deshalb",
+      "anfang": 59.76,
+      "ende": 60.16
+    },
+    {
+      "text": "gibt",
+      "anfang": 60.213,
+      "ende": 60.32
+    },
+    {
+      "text": "es",
+      "anfang": 60.36,
+      "ende": 60.4
+    },
+    {
+      "text": "ein",
+      "anfang": 60.48,
+      "ende": 60.64
+    },
+    {
+      "text": "zweites",
+      "anfang": 60.68,
+      "ende": 61.04
+    },
+    {
+      "text": "Mikrofon,",
+      "anfang": 61.12,
+      "ende": 61.92
+    },
+    {
+      "text": "innen,",
+      "anfang": 62.08,
+      "ende": 62.4
+    },
+    {
+      "text": "das",
+      "anfang": 62.48,
+      "ende": 62.56
+    },
+    {
+      "text": "auf",
+      "anfang": 62.6,
+      "ende": 62.64
+    },
+    {
+      "text": "dein",
+      "anfang": 62.72,
+      "ende": 62.88
+    },
+    {
+      "text": "Ohr",
+      "anfang": 62.92,
+      "ende": 63.04
+    },
+    {
+      "text": "zeigt.",
+      "anfang": 63.12,
+      "ende": 63.68
+    },
+    {
+      "text": "Es",
+      "anfang": 63.92,
+      "ende": 64.08
+    },
+    {
+      "text": "hört",
+      "anfang": 64.16,
+      "ende": 64.32
+    },
+    {
+      "text": "den",
+      "anfang": 64.4,
+      "ende": 64.48
+    },
+    {
+      "text": "Lärm,",
+      "anfang": 64.56,
+      "ende": 64.853
+    },
+    {
+      "text": "der",
+      "anfang": 64.907,
+      "ende": 64.96
+    },
+    {
+      "text": "übrig",
+      "anfang": 65,
+      "ende": 65.28
+    },
+    {
+      "text": "bleibt,",
+      "anfang": 65.36,
+      "ende": 65.84
+    },
+    {
+      "text": "und",
+      "anfang": 65.92,
+      "ende": 66
+    },
+    {
+      "text": "löscht",
+      "anfang": 66.08,
+      "ende": 66.32
+    },
+    {
+      "text": "auch",
+      "anfang": 66.36,
+      "ende": 66.48
+    },
+    {
+      "text": "den.",
+      "anfang": 66.56,
+      "ende": 67.12
+    },
+    {
+      "text": "Bei",
+      "anfang": 67.44,
+      "ende": 67.52
+    },
+    {
+      "text": "den",
+      "anfang": 67.6,
+      "ende": 67.76
+    },
+    {
+      "text": "ersten",
+      "anfang": 67.84,
+      "ende": 68.16
+    },
+    {
+      "text": "Ehrpods",
+      "anfang": 68.24,
+      "ende": 68.64
+    },
+    {
+      "text": "Pro",
+      "anfang": 68.72,
+      "ende": 69.12
+    },
+    {
+      "text": "wurde",
+      "anfang": 69.28,
+      "ende": 69.44
+    },
+    {
+      "text": "das",
+      "anfang": 69.52,
+      "ende": 69.6
+    },
+    {
+      "text": "laut",
+      "anfang": 69.68,
+      "ende": 69.92
+    },
+    {
+      "text": "Äppel",
+      "anfang": 70,
+      "ende": 70.24
+    },
+    {
+      "text": "zweihundert",
+      "anfang": 70.48,
+      "ende": 70.96
+    },
+    {
+      "text": "Mal",
+      "anfang": 71.04,
+      "ende": 71.2
+    },
+    {
+      "text": "pro",
+      "anfang": 71.28,
+      "ende": 71.44
+    },
+    {
+      "text": "Sekunde",
+      "anfang": 71.48,
+      "ende": 71.84
+    },
+    {
+      "text": "korrigiert.",
+      "anfang": 71.92,
+      "ende": 72.76
+    },
+    {
+      "text": "Deshalb",
+      "anfang": 73.04,
+      "ende": 73.44
+    },
+    {
+      "text": "löschen",
+      "anfang": 73.52,
+      "ende": 73.76
+    },
+    {
+      "text": "sie",
+      "anfang": 73.84,
+      "ende": 73.92
+    },
+    {
+      "text": "ein",
+      "anfang": 73.96,
+      "ende": 74
+    },
+    {
+      "text": "Triebwerk",
+      "anfang": 74.08,
+      "ende": 74.56
+    },
+    {
+      "text": "aus,",
+      "anfang": 74.72,
+      "ende": 75.12
+    },
+    {
+      "text": "aber",
+      "anfang": 75.24,
+      "ende": 75.36
+    },
+    {
+      "text": "nicht",
+      "anfang": 75.44,
+      "ende": 75.6
+    },
+    {
+      "text": "die",
+      "anfang": 75.68,
+      "ende": 75.76
+    },
+    {
+      "text": "Person,",
+      "anfang": 75.84,
+      "ende": 76.4
+    },
+    {
+      "text": "die",
+      "anfang": 76.44,
+      "ende": 76.48
+    },
+    {
+      "text": "neben",
+      "anfang": 76.56,
+      "ende": 76.72
+    },
+    {
+      "text": "dir",
+      "anfang": 76.8,
+      "ende": 76.88
+    },
+    {
+      "text": "redet.",
+      "anfang": 76.96,
+      "ende": 77.6
+    },
+    {
+      "text": "Ein",
+      "anfang": 77.92,
+      "ende": 78.08
+    },
+    {
+      "text": "gleichmäßiger,",
+      "anfang": 78.2,
+      "ende": 79.2
+    },
+    {
+      "text": "tiefer",
+      "anfang": 79.28,
+      "ende": 79.52
+    },
+    {
+      "text": "Ton",
+      "anfang": 79.6,
+      "ende": 79.92
+    },
+    {
+      "text": "ist",
+      "anfang": 80.04,
+      "ende": 80.16
+    },
+    {
+      "text": "leicht",
+      "anfang": 80.24,
+      "ende": 80.48
+    },
+    {
+      "text": "vorherzusagen.",
+      "anfang": 80.56,
+      "ende": 81.56
+    },
+    {
+      "text": "Eine",
+      "anfang": 81.84,
+      "ende": 82
+    },
+    {
+      "text": "Stimme",
+      "anfang": 82.08,
+      "ende": 82.4
+    },
+    {
+      "text": "ändert",
+      "anfang": 82.48,
+      "ende": 82.64
+    },
+    {
+      "text": "sich",
+      "anfang": 82.72,
+      "ende": 82.88
+    },
+    {
+      "text": "zu",
+      "anfang": 82.96,
+      "ende": 83.12
+    },
+    {
+      "text": "schnell,",
+      "anfang": 83.2,
+      "ende": 83.68
+    },
+    {
+      "text": "um",
+      "anfang": 83.76,
+      "ende": 83.84
+    },
+    {
+      "text": "rechtzeitig",
+      "anfang": 83.96,
+      "ende": 84.4
+    },
+    {
+      "text": "umgedreht",
+      "anfang": 84.48,
+      "ende": 84.88
+    },
+    {
+      "text": "zu",
+      "anfang": 84.96,
+      "ende": 85.04
+    },
+    {
+      "text": "werden.",
+      "anfang": 85.12,
+      "ende": 85.64
+    },
+    {
+      "text": "Und",
+      "anfang": 85.92,
+      "ende": 86.16
+    },
+    {
+      "text": "deshalb",
+      "anfang": 86.2,
+      "ende": 86.56
+    },
+    {
+      "text": "ist",
+      "anfang": 86.64,
+      "ende": 86.72
+    },
+    {
+      "text": "der",
+      "anfang": 86.8,
+      "ende": 86.88
+    },
+    {
+      "text": "Sitz",
+      "anfang": 86.96,
+      "ende": 87.12
+    },
+    {
+      "text": "so",
+      "anfang": 87.2,
+      "ende": 87.28
+    },
+    {
+      "text": "wichtig.",
+      "anfang": 87.32,
+      "ende": 88.04
+    },
+    {
+      "text": "Wenn",
+      "anfang": 88.32,
+      "ende": 88.4
+    },
+    {
+      "text": "der",
+      "anfang": 88.48,
+      "ende": 88.56
+    },
+    {
+      "text": "Aufsatz",
+      "anfang": 88.64,
+      "ende": 89.04
+    },
+    {
+      "text": "dein",
+      "anfang": 89.08,
+      "ende": 89.2
+    },
+    {
+      "text": "Ohr",
+      "anfang": 89.36,
+      "ende": 89.52
+    },
+    {
+      "text": "nicht",
+      "anfang": 89.573,
+      "ende": 89.68
+    },
+    {
+      "text": "abdichtet,",
+      "anfang": 89.76,
+      "ende": 90.56
+    },
+    {
+      "text": "dringt",
+      "anfang": 90.64,
+      "ende": 90.88
+    },
+    {
+      "text": "der",
+      "anfang": 90.92,
+      "ende": 90.96
+    },
+    {
+      "text": "Lärm",
+      "anfang": 91.04,
+      "ende": 91.28
+    },
+    {
+      "text": "daran",
+      "anfang": 91.32,
+      "ende": 91.52
+    },
+    {
+      "text": "vorbei.",
+      "anfang": 91.6,
+      "ende": 92.32
+    },
+    {
+      "text": "In",
+      "anfang": 92.64,
+      "ende": 92.72
+    },
+    {
+      "text": "den",
+      "anfang": 92.8,
+      "ende": 92.88
+    },
+    {
+      "text": "Einstellungen",
+      "anfang": 92.96,
+      "ende": 93.52
+    },
+    {
+      "text": "deines",
+      "anfang": 93.56,
+      "ende": 93.84
+    },
+    {
+      "text": "iPhones",
+      "anfang": 93.92,
+      "ende": 94.4
+    },
+    {
+      "text": "gibt",
+      "anfang": 94.48,
+      "ende": 94.64
+    },
+    {
+      "text": "es",
+      "anfang": 94.68,
+      "ende": 94.72
+    },
+    {
+      "text": "einen",
+      "anfang": 94.8,
+      "ende": 94.96
+    },
+    {
+      "text": "Test",
+      "anfang": 95.04,
+      "ende": 95.2
+    },
+    {
+      "text": "dafür:",
+      "anfang": 95.28,
+      "ende": 96.08
+    },
+    {
+      "text": "den",
+      "anfang": 96.16,
+      "ende": 96.32
+    },
+    {
+      "text": "Ohreinsatz-Passformtest.",
+      "anfang": 96.48,
+      "ende": 98.32
+    },
+    {
+      "text": "Deine",
+      "anfang": 98.64,
+      "ende": 98.96
+    },
+    {
+      "text": "Ehrpods",
+      "anfang": 99,
+      "ende": 99.44
+    },
+    {
+      "text": "blockieren",
+      "anfang": 99.52,
+      "ende": 99.92
+    },
+    {
+      "text": "also",
+      "anfang": 100,
+      "ende": 100.24
+    },
+    {
+      "text": "nicht",
+      "anfang": 100.293,
+      "ende": 100.4
+    },
+    {
+      "text": "die",
+      "anfang": 100.48,
+      "ende": 100.56
+    },
+    {
+      "text": "Welt.",
+      "anfang": 100.667,
+      "ende": 101.28
+    },
+    {
+      "text": "Sie",
+      "anfang": 101.36,
+      "ende": 101.44
+    },
+    {
+      "text": "spielen",
+      "anfang": 101.52,
+      "ende": 101.76
+    },
+    {
+      "text": "ihr",
+      "anfang": 101.8,
+      "ende": 101.92
+    },
+    {
+      "text": "genaues",
+      "anfang": 102.04,
+      "ende": 102.4
+    },
+    {
+      "text": "Gegenteil,",
+      "anfang": 102.48,
+      "ende": 103.28
+    },
+    {
+      "text": "und",
+      "anfang": 103.4,
+      "ende": 103.52
+    },
+    {
+      "text": "beides",
+      "anfang": 103.56,
+      "ende": 103.84
+    },
+    {
+      "text": "zusammen",
+      "anfang": 103.92,
+      "ende": 104.32
+    },
+    {
+      "text": "ergibt:",
+      "anfang": 104.44,
+      "ende": 105.2
+    },
+    {
+      "text": "nichts.",
+      "anfang": 105.24,
+      "ende": 106.24
+    },
+    {
+      "text": "Folg",
+      "anfang": 106.28,
+      "ende": 106.56
+    },
+    {
+      "text": "mir",
+      "anfang": 106.64,
+      "ende": 106.88
+    },
+    {
+      "text": "und",
+      "anfang": 106.96,
+      "ende": 107.04
+    },
+    {
+      "text": "schick",
+      "anfang": 107.08,
+      "ende": 107.28
+    },
+    {
+      "text": "das",
+      "anfang": 107.36,
+      "ende": 107.44
+    },
+    {
+      "text": "jemandem,",
+      "anfang": 107.52,
+      "ende": 108.16
+    },
+    {
+      "text": "der",
+      "anfang": 108.2,
+      "ende": 108.24
+    },
+    {
+      "text": "seine",
+      "anfang": 108.32,
+      "ende": 108.56
+    },
+    {
+      "text": "Ehrpods",
+      "anfang": 108.64,
+      "ende": 109.12
+    },
+    {
+      "text": "nie",
+      "anfang": 109.28,
+      "ende": 109.44
+    },
+    {
+      "text": "herausnimmt.",
+      "anfang": 109.52,
+      "ende": 110.24
+    }
+  ]
+}

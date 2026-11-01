@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hier starten · Viral Studio Folder</title>
+<style>
+  /* Funktioniert offline: Systemschriften, nichts wird aus dem Internet geladen. Dieselben Farben wie viralstudiofolder.com. */
+  :root {
+    --bg: #08090a; --surface: #111214; --surface-2: #17181b; --border: #232428;
+    --text: #f7f8f8; --text-2: #d0d6e0; --muted: #8a8f98; --faint: #62666d;
+    --accent: #e5e5e6; --accent-text: #08090a; --highlight: #7c5cff; --pink: #ff5ca8; --green: #5fe0a0;
+    --radius: 14px;
+    --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Mono", Consolas, Menlo, monospace;
+    color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  h1, h2, h3, p, ol, ul { margin: 0; }
+  ol, ul { padding: 0; list-style: none; }
+  .wrap { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .icon { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  header { position: sticky; top: 0; z-index: 10; height: 60px; display: flex; align-items: center; background: rgba(8, 9, 10, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; text-decoration: none; }
+  .logo-mark { width: 32px; height: 32px; border-radius: 8px; display: block; flex: none; }
+  .site { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .site:hover { color: var(--text); }
+  .label { font-family: var(--mono); font-size: 12px; line-height: 16px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .hero { padding: 64px 0 8px; }
+  h1 { margin-top: 16px; font-size: clamp(36px, 6vw, 52px); line-height: 1.05; font-weight: 500; letter-spacing: -0.03em; }
+  h1 em { font-style: normal; color: var(--green); text-shadow: 0 0 28px rgba(95, 224, 160, 0.35); }
+  .sub { margin-top: 18px; font-size: 17px; line-height: 28px; color: var(--muted); }
+  .guide { margin-top: 28px; display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 9999px; background: var(--accent); color: var(--accent-text); font-size: 14px; font-weight: 500; text-decoration: none; transition: opacity .15s; }
+  .guide:hover { opacity: .88; }
+  .steps { margin-top: 48px; border-top: 1px solid var(--border); }
+  .step { display: grid; grid-template-columns: 32px 1fr; gap: 16px; padding: 28px 0; border-bottom: 1px solid var(--border); }
+  .num { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-text); font-size: 14px; font-weight: 600; }
+  .done .num { background: transparent; border: 1px solid var(--green); color: var(--green); }
+  .done h2 { color: var(--muted); }
+  .badge { display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; padding: 0 8px; border-radius: 9999px; background: rgba(95, 224, 160, 0.12); color: var(--green); font-size: 12px; line-height: 20px; font-weight: 500; vertical-align: 3px; }
+  h2 { font-size: 21px; line-height: 30px; font-weight: 500; letter-spacing: -0.015em; }
+  .step p { margin-top: 8px; color: var(--muted); }
+  .step p strong { color: var(--text); font-weight: 600; }
+  .k { display: inline-block; padding: 0 6px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 14px; line-height: 22px; font-weight: 500; white-space: nowrap; }
+  .f { font-family: var(--mono); font-size: 14px; color: var(--text-2); }
+  .ai { margin-top: 12px; display: grid; gap: 8px; }
+  .ai li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text-2); font-size: 15px; line-height: 24px; }
+  .ai li > span { font-family: var(--mono); font-size: 11px; line-height: 24px; text-transform: uppercase; letter-spacing: .08em; color: var(--faint); }
+  .say { margin-top: 12px; display: flex; align-items: center; gap: 10px; padding: 8px 8px 8px 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); }
+  .say code { flex: 1; min-width: 0; font-family: var(--mono); font-size: 14px; line-height: 22px; color: var(--text); overflow-wrap: anywhere; }
+  .copy { flex: none; height: 32px; padding: 0 14px; border-radius: 9999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-2); font: 500 13px/1 var(--sans); cursor: pointer; transition: background .15s; }
+  .copy:hover { color: var(--text); background: var(--border); }
+  .copy.ok { color: var(--green); }
+  .box { margin-top: 16px; padding: 18px 20px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); }
+  .box h3 { font-size: 15px; line-height: 24px; font-weight: 600; }
+  .how { margin-top: 10px; display: grid; gap: 8px; counter-reset: how; }
+  .how li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; font-size: 15px; line-height: 24px; color: var(--text-2); }
+  .how li::before { counter-increment: how; content: counter(how); width: 22px; height: 22px; margin-top: 1px; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center; font: 500 11px/1 var(--mono); color: var(--muted); }
+  .warn { margin-top: 14px; padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(124, 92, 255, 0.4); background: rgba(124, 92, 255, 0.08); font-size: 14px; line-height: 22px; color: var(--text-2); }
+  .warn strong { color: var(--text); }
+  .expect { margin-top: 56px; }
+  .expect h2 { font-size: 26px; line-height: 32px; letter-spacing: -0.025em; }
+  .expect ul { margin-top: 16px; display: grid; gap: 10px; }
+  .expect li { padding-left: 18px; position: relative; color: var(--muted); }
+  .expect li::before { content: ""; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 2px; background: linear-gradient(135deg, var(--highlight), var(--pink)); }
+  .expect li strong { color: var(--text-2); font-weight: 600; }
+  .help { margin: 56px 0 48px; padding: 28px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); text-align: center; }
+  .help h2 { font-size: 26px; line-height: 32px; letter-spacing: -0.025em; }
+  .help p { margin-top: 10px; color: var(--text-2); }
+  .help a { font-weight: 600; }
+  .help small { display: block; margin-top: 10px; font-size: 13px; line-height: 20px; color: var(--faint); }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 40px; font-size: 13px; line-height: 20px; color: var(--faint); }
+  footer p + p { margin-top: 6px; }
+  @media (max-width: 520px) { .ai li { grid-template-columns: 1fr; gap: 2px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="https://viralstudiofolder.com" target="_blank" rel="noopener">
+      <img class="logo-mark" alt="" width="32" height="32" src="data:image/png;base64,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">
+      Viral Studio Folder
+    </a>
+    <a class="site" href="https://viralstudiofolder.com" target="_blank" rel="noopener">viralstudiofolder.com</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <span class="label">Hier starten</span>
+    <h1>Dein erstes Video,<br>in <em>fünf Schritten</em>.</h1>
+    <p class="sub">Wenn du das hier liest, hast du schon zwei geschafft. Mach mit dem Rest der Reihe nach weiter. Du bringst die Idee mit, deine KI macht den Rest.</p>
+    <a class="guide" href="https://viralstudiofolder.com/#how" target="_blank" rel="noopener">So funktioniert es
+      <svg class="icon" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+  </section>
+
+  <ol class="steps">
+    <li class="step done">
+      <span class="num">1</span>
+      <div>
+        <h2>Lade die Datei herunter <span class="badge">Erledigt</span></h2>
+        <p>Aus der E-Mail von Gumroad: <span class="k">Download</span>.</p>
+      </div>
+    </li>
+    <li class="step done">
+      <span class="num">2</span>
+      <div>
+        <h2>Entpack sie <span class="badge">Erledigt</span></h2>
+        <p>Windows: Rechtsklick, <span class="k">Alle extrahieren…</span>. Mac: Doppelklick. Der richtige Ordner ist dieser hier, der mit dieser Datei darin. Verschieb hier drin nichts.</p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="num">3</span>
+      <div>
+        <h2>Öffne diesen Ordner in deiner KI</h2>
+        <p>Es muss die App auf deinem Computer sein, nicht die Website. Der Ordner heißt <span class="f">Viral Studio Folder</span>.</p>
+        <ul class="ai">
+          <li><span>Claude</span><div>Öffne die Claude-App und klick oben auf <span class="k">Code</span>. Klick über dem Textfeld auf <span class="k">Select folder</span> und wähl diesen Ordner.</div></li>
+          <li><span>ChatGPT</span><div>Öffne die ChatGPT-App und geh zu <span class="k">Codex</span>. Klick auf das <span class="k">+</span> neben <span class="k">Projects</span>, lass <span class="k">Local</span> ausgewählt und wähl diesen Ordner.</div></li>
+        </ul>
+        <p>Wenn sie fragt, ob du dem Ordner vertraust, sag ja.</p>
+      </div>
+    </li>
+    <li class="step">
+      <span class="num">4</span>
+      <div>
+        <h2>Schreib «richte mich ein»</h2>
+        <div class="say"><code>richte mich ein</code><button class="copy" type="button" data-copy="richte mich ein">Kopieren</button></div>
+        <p>Deine KI installiert, was ihr fehlt, und stellt dir ein paar Fragen, zum Beispiel zur Sprache oder zur Stimme. Danach öffnet sie in deinem Browser eine Seite für deinen <strong>ElevenLabs-Schlüssel</strong>. Füg ihn auf dieser Seite ein, nicht im Chat.</p>
+        <div class="box">
+          <h3>So bekommst du deinen ElevenLabs-Schlüssel</h3>
+          <ol class="how">
+            <li><span>Geh auf <a href="https://elevenlabs.io" target="_blank" rel="noopener">elevenlabs.io</a> und leg dein Konto an oder melde dich in deinem an.</span></li>
+            <li><span>Klick unten links auf <span class="k">Developers</span> und dann auf <span class="k">API Keys</span>.</span></li>
+            <li><span>Klick auf <span class="k">Create Key</span> und gib ihm einen Namen, egal welchen.</span></li>
+            <li><span>Schalte den Schalter <span class="k">Restrict Key</span> aus. Wenn du ihn anlässt, kann der Schlüssel keine Stimmen machen.</span></li>
+            <li><span>Erstell den Schlüssel und kopier ihn. Er beginnt mit <span class="f">sk_</span> und ist lang.</span></li>
+          </ol>
+          <p class="warn"><strong>Die ID des Schlüssels funktioniert nicht.</strong> In der Liste der Schlüssel siehst du einen kurzen Code: Das ist er nicht. Der richtige beginnt mit <span class="f">sk_</span>. ElevenLabs zeigt ihn dir nur einmal: Wenn du ihn nicht kopiert hast, erstell einen neuen.</p>
+        </div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="num">5</span>
+      <div>
+        <h2>Bestell dein Video</h2>
+        <p>Frag mit deinen eigenen Worten, als würdest du mit einem Menschen reden. Zum Beispiel:</p>
+        <div class="say"><code>Mach mir ein Video darüber, warum der Himmel blau ist</code><button class="copy" type="button" data-copy="Mach mir ein Video darüber, warum der Himmel blau ist">Kopieren</button></div>
+        <p>Kein Thema? Bitte sie um Ideen: «Gib mir Ideen für ein Video».</p>
+      </div>
+    </li>
+  </ol>
+
+  <section class="expect">
+    <h2>Was dich erwartet</h2>
+    <ul>
+      <li><strong>Beim ersten Mal installiert sie Dinge.</strong> Das dauert ein paar Minuten. Es passiert nur einmal.</li>
+      <li><strong>Sie wird um Erlaubnis fragen,</strong> Programme zu installieren oder Seiten zu öffnen. Das ist normal: Stimm zu.</li>
+      <li><strong>Das Video dauert eine Weile,</strong> weil sie recherchiert, zeichnet und sich selbst prüft. Es kann eine Stunde dauern. Lass deinen Computer an und die App offen.</li>
+      <li><strong>Sie zeigt dir Dinge, bevor sie weitermacht.</strong> Sag ihr, was sie ändern soll, oder schreib «mach weiter».</li>
+      <li><strong>Dein Video bleibt in diesem Ordner,</strong> in <span class="f">ausgabe</span>, mit dem Titelbild und dem Text für den Post. Willst du das Skript lesen? Frag danach: «zeig mir das Skript».</li>
+      <li><strong>Sie zeigt dir zwei verschiedene Anfänge</strong> für dasselbe Video und fragt, welcher dir besser gefällt.</li>
+    </ul>
+  </section>
+
+  <section class="expect">
+    <h2>Damit du weniger Nutzung deiner KI verbrauchst</h2>
+    <ul>
+      <li><strong>Ein Video pro Gespräch.</strong> Für das nächste öffne ein neues Gespräch in diesem Ordner. Ein langes Gespräch kostet bei jedem Schritt mehr.</li>
+      <li><strong>Schalte die Konnektoren aus, die du nicht benutzt,</strong> während du Videos machst (E-Mail, Kalender, Notion, Figma...). Jeder belastet jede Nachricht.</li>
+    </ul>
+  </section>
+
+  <section class="help">
+    <h2>Kommst du nicht weiter?</h2>
+    <p>Wenn du nicht weiterkommst, schreib an <a href="mailto:contact@viralstudiofolder.com?subject=Hilfe%20mit%20Viral%20Studio%20Folder">contact@viralstudiofolder.com</a>, mit einem Screenshot.</p>
+    <small>Ein Screenshot ist ein Bild deines Bildschirms. Unter Windows: Windows-Taste + Umschalt + S. Auf dem Mac: Cmd + Umschalt + 4. Es antwortet ein echter Mensch.</small>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Hero Craft Barcelona, S.L. · Viral Studio Folder</p>
+    <p>Claude, ChatGPT, Codex und ElevenLabs sind Marken ihrer jeweiligen Inhaber. Viral Studio Folder ist nicht mit ihnen verbunden und wird nicht von ihnen unterstützt.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.copy').forEach((b) => b.addEventListener('click', async () => {
+    const text = b.dataset.copy;
+    try { await navigator.clipboard.writeText(text); } catch {
+      const t = Object.assign(document.createElement('textarea'), { value: text });
+      document.body.append(t); t.select(); try { document.execCommand('copy'); } catch {} t.remove();
+    }
+    b.classList.add('ok'); b.textContent = 'Kopiert';
+    setTimeout(() => { b.classList.remove('ok'); b.textContent = 'Kopieren'; }, 1600);
+  }));
+</script>
+</body>
+</html>
