@@ -1,0 +1,29 @@
+{
+  "titel": "Wie AirPods Lärm löschen",
+  "sprache": "de",
+  "untertitel": "oben",
+  "saetze": [
+    { "text": "AirPods können ein Flugzeugtriebwerk verstummen lassen, und sie blockieren den Schall nicht einmal.", "schluessel": "verstummen", "hook": true, "gesprochen": "Ehrpods können ein Flugzeugtriebwerk verstummen lassen, und sie blockieren den Schall nicht einmal." },
+    { "text": "Wohin geht also der Lärm?", "schluessel": "Lärm", "hook": true },
+    { "text": "Nirgendwohin. Denn deine AirPods entfernen den Lärm gar nicht: Sie spielen einen zweiten Ton darüber.", "schluessel": "zweiten", "gesprochen": "Nirgendwohin. Denn deine Ehrpods entfernen den Lärm gar nicht: Sie spielen einen zweiten Ton darüber." },
+    { "text": "Sie hören dem Lärm zu und spielen sein genaues Gegenteil.", "schluessel": "Gegenteil" },
+    { "text": "Stell dir vor, du sitzt im Flugzeug, und das Triebwerk ist ein einziges, langes, tiefes Dröhnen.", "schluessel": "Dröhnen" },
+    { "text": "Schall ist nur Luft, die an deinem Trommelfell drückt und zieht, hunderte Male pro Sekunde.", "schluessel": "Trommelfell" },
+    { "text": "Außen an jedem AirPod sitzt ein winziges Mikrofon, und es hört dieses Dröhnen einen Sekundenbruchteil, bevor es dein Ohr erreicht.", "schluessel": "Mikrofon", "gesprochen": "Außen an jedem Ehrpod sitzt ein winziges Mikrofon, und es hört dieses Dröhnen einen Sekundenbruchteil, bevor es dein Ohr erreicht." },
+    { "text": "Ein Chip nimmt diese Welle und dreht sie auf den Kopf.", "schluessel": "Kopf" },
+    { "text": "Wo das Triebwerk drückt, zieht der Lautsprecher in deinem Ohr, genau gleich stark.", "schluessel": "zieht" },
+    { "text": "Apple nennt das Anti-Lärm.", "schluessel": "Anti-Lärm" },
+    { "text": "Die beiden Wellen treffen sich in deinem Ohr und heben sich auf.", "schluessel": "auf" },
+    { "text": "Dein Trommelfell bewegt sich kaum, und genau das hörst du als Stille.", "schluessel": "Stille" },
+    { "text": "Aber die Kopie ist nie perfekt.", "schluessel": "perfekt" },
+    { "text": "Deshalb gibt es ein zweites Mikrofon, innen, das auf dein Ohr zeigt. Es hört den Lärm, der übrig bleibt, und löscht auch den.", "schluessel": "innen" },
+    { "text": "Bei den ersten AirPods Pro wurde das laut Apple 200 Mal pro Sekunde korrigiert.", "schluessel": "200", "gesprochen": "Bei den ersten Ehrpods Pro wurde das laut Äppel zweihundert Mal pro Sekunde korrigiert." },
+    { "text": "Deshalb löschen sie ein Triebwerk aus, aber nicht die Person, die neben dir redet.", "schluessel": "redet" },
+    { "text": "Ein gleichmäßiger, tiefer Ton ist leicht vorherzusagen. Eine Stimme ändert sich zu schnell, um rechtzeitig umgedreht zu werden.", "schluessel": "Stimme" },
+    { "text": "Und deshalb ist der Sitz so wichtig. Wenn der Aufsatz dein Ohr nicht abdichtet, dringt der Lärm daran vorbei.", "schluessel": "Sitz" },
+    { "text": "In den Einstellungen deines iPhones gibt es einen Test dafür: den Ohreinsatz-Passformtest.", "schluessel": "Ohreinsatz-Passformtest" },
+    { "text": "Deine AirPods blockieren also nicht die Welt. Sie spielen ihr genaues Gegenteil, und beides zusammen ergibt: nichts.", "schluessel": "nichts", "gesprochen": "Deine Ehrpods blockieren also nicht die Welt. Sie spielen ihr genaues Gegenteil, und beides zusammen ergibt: nichts." },
+    { "text": "Folg mir und schick das jemandem, der seine AirPods nie herausnimmt.", "schluessel": "nie", "gesprochen": "Folg mir und schick das jemandem, der seine Ehrpods nie herausnimmt." }
+  ],
+  "stimme": { "id": "nPczCjzI2devNBz1zQrb", "geschwindigkeit": 1.12 }
+}

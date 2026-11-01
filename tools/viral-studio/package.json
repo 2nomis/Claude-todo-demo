@@ -1,0 +1,15 @@
+{
+  "name": "viral-studio-folder",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Viral Studio Folder: gezeichnete Erklär-Reels. Eine Idee geht rein, das Video kommt raus.",
+  "homepage": "https://viralstudiofolder.com",
+  "imports": {
+    "#kit": "./motor/kit/index.js",
+    "#stimme": "./motor/lib/aktuelle-stimme.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.97"
+  }
+}

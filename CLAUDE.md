@@ -15,6 +15,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `public/` | `index.html`, `app.js`, `style.css` |
 | `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port), `url.test.js` |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein; auch als Setup-Skript für Cloud-Umgebungen (ohne Repo, Sitzung oder Zugangsdaten) |
+| `tools/viral-studio/` | Viral Studio Folder: gezeichnete Erklär-Reels für den Shop des Nutzers; eigene `AGENTS.md` (dort lesen und befolgen) |
 | `tools/paperclip/` | Paperclip mit Dropshipping-Agententeam: `setup.sh` (Installation), `start.sh` (Server + Team), `team.mjs` (Firma, Ziel, 9 Agenten) |
 
 ```bash
@@ -57,6 +58,12 @@ Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Än
 - `setup.sh` braucht kein Repo und eignet sich als Setup-Skript der Cloud-Umgebung; Versionen sind darin festgelegt (Paperclip `2026.1012.0`, Node `24.22.0`).
 - Bewusst so: Server läuft als Nutzer `paperclip`, weil das eingebettete Postgres nicht als root startet und als `postgres` nicht in `/root` kommt. Node 24 ist Pflicht (≥ 24.11). npm braucht `legacy-peer-deps`, sonst Fehler `edgesOut`.
 - Die Agenten (Adapter `claude_local`) arbeiten erst mit `ANTHROPIC_API_KEY` als Umgebungs-Secret; `start.sh` reicht ihn an den Server durch. Mit Schlüssel noch nicht getestet.
+
+## Viral Studio Folder
+
+- Nicht Teil der Todo-App: macht Reels für den Shop des Nutzers (Instagram, TikTok). Bei Video-Anfragen in `tools/viral-studio/` arbeiten und dessen `AGENTS.md` folgen; Vorlieben in `tools/viral-studio/vorlieben.md`.
+- Pro Sitzung einmal `npm install` in `tools/viral-studio/` (Node ≥ 20, ffmpeg nötig), Prüfung mit `node motor/doctor.mjs`.
+- Stimme braucht `ELEVENLABS_API_KEY`; in der Cloud als Umgebungsvariable, da `motor/schluessel.mjs` nur eine lokale Seite öffnet. `.env.local` ist ignoriert.
 
 ## Git
 

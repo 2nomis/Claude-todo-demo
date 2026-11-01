@@ -1,0 +1,19 @@
+{
+  "titel": "Why your tape measure hook is loose",
+  "sprache": "en",
+  "untertitel": "oben",
+  "saetze": [
+    { "text": "Why is the hook on your tape measure loose?", "schluessel": "loose", "hook": true },
+    { "text": "No, it's not broken.", "schluessel": "broken", "hook": true },
+    { "text": "It moves exactly its own thickness, not a hair more.", "schluessel": "thickness" },
+    { "text": "Hook it on a board and pull, it slides out,", "schluessel": "pull" },
+    { "text": "and zero sits right where it touches the board.", "schluessel": "zero" },
+    { "text": "But push it against a wall, it slides in,", "schluessel": "push" },
+    { "text": "and zero sits right where it touches the wall.", "schluessel": "wall" },
+    { "text": "So however you measure, its thickness never sneaks into the reading.", "schluessel": "never" },
+    { "text": "Squeeze it tight, and one of the two will always come out wrong.", "schluessel": "wrong" },
+    { "text": "So yes, it's loose, but on purpose.", "schluessel": "purpose" },
+    { "text": "Send this to that friend who squeezed their tape measure hook thinking it was broken.", "schluessel": "friend" }
+  ],
+  "stimme": { "id": "nPczCjzI2devNBz1zQrb", "geschwindigkeit": 1.12 }
+}

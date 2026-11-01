@@ -1,0 +1,827 @@
+{
+  "signatur": "d82eecffd26d",
+  "dauer": 35.36,
+  "saetze": [
+    {
+      "n": 1,
+      "text": "Why is the hook on your tape measure loose?",
+      "schluessel": "loose",
+      "anfang": 0,
+      "ende": 2.32
+    },
+    {
+      "n": 2,
+      "text": "No, it's not broken.",
+      "schluessel": "broken",
+      "anfang": 2.56,
+      "ende": 3.96
+    },
+    {
+      "n": 3,
+      "text": "It moves exactly its own thickness, not a hair more.",
+      "schluessel": "thickness",
+      "anfang": 4.16,
+      "ende": 7.72
+    },
+    {
+      "n": 4,
+      "text": "Hook it on a board and pull, it slides out,",
+      "schluessel": "pull",
+      "anfang": 8,
+      "ende": 10.72
+    },
+    {
+      "n": 5,
+      "text": "and zero sits right where it touches the board.",
+      "schluessel": "zero",
+      "anfang": 10.8,
+      "ende": 13.28
+    },
+    {
+      "n": 6,
+      "text": "But push it against a wall, it slides in,",
+      "schluessel": "push",
+      "anfang": 13.6,
+      "ende": 16.56
+    },
+    {
+      "n": 7,
+      "text": "and zero sits right where it touches the wall.",
+      "schluessel": "wall",
+      "anfang": 16.64,
+      "ende": 19.12
+    },
+    {
+      "n": 8,
+      "text": "So however you measure, its thickness never sneaks into the reading.",
+      "schluessel": "never",
+      "anfang": 19.44,
+      "ende": 23.12
+    },
+    {
+      "n": 9,
+      "text": "Squeeze it tight, and one of the two will always come out wrong.",
+      "schluessel": "wrong",
+      "anfang": 23.6,
+      "ende": 27.36
+    },
+    {
+      "n": 10,
+      "text": "So yes, it's loose, but on purpose.",
+      "schluessel": "purpose",
+      "anfang": 27.44,
+      "ende": 30
+    },
+    {
+      "n": 11,
+      "text": "Send this to that friend who squeezed their tape measure hook thinking it was broken.",
+      "schluessel": "friend",
+      "anfang": 30.56,
+      "ende": 34.56
+    }
+  ],
+  "woerter": [
+    {
+      "text": "Why",
+      "anfang": 0,
+      "ende": 0.24,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "is",
+      "anfang": 0.32,
+      "ende": 0.4,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "the",
+      "anfang": 0.44,
+      "ende": 0.48,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "hook",
+      "anfang": 0.64,
+      "ende": 0.8,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "on",
+      "anfang": 0.88,
+      "ende": 0.96,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "your",
+      "anfang": 1.04,
+      "ende": 1.12,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "tape",
+      "anfang": 1.2,
+      "ende": 1.36,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "measure",
+      "anfang": 1.44,
+      "ende": 1.68,
+      "satz": 1,
+      "schluessel": false
+    },
+    {
+      "text": "loose?",
+      "anfang": 1.76,
+      "ende": 2.32,
+      "satz": 1,
+      "schluessel": true
+    },
+    {
+      "text": "No,",
+      "anfang": 2.56,
+      "ende": 2.96,
+      "satz": 2,
+      "schluessel": false
+    },
+    {
+      "text": "it's",
+      "anfang": 3.04,
+      "ende": 3.173,
+      "satz": 2,
+      "schluessel": false
+    },
+    {
+      "text": "not",
+      "anfang": 3.227,
+      "ende": 3.28,
+      "satz": 2,
+      "schluessel": false
+    },
+    {
+      "text": "broken.",
+      "anfang": 3.36,
+      "ende": 3.96,
+      "satz": 2,
+      "schluessel": true
+    },
+    {
+      "text": "It",
+      "anfang": 4.16,
+      "ende": 4.32,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "moves",
+      "anfang": 4.4,
+      "ende": 4.64,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "exactly",
+      "anfang": 4.8,
+      "ende": 5.28,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "its",
+      "anfang": 5.36,
+      "ende": 5.44,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "own",
+      "anfang": 5.52,
+      "ende": 5.68,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "thickness,",
+      "anfang": 5.76,
+      "ende": 6.48,
+      "satz": 3,
+      "schluessel": true
+    },
+    {
+      "text": "not",
+      "anfang": 6.56,
+      "ende": 6.72,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "a",
+      "anfang": 6.76,
+      "ende": 6.8,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "hair",
+      "anfang": 6.88,
+      "ende": 7.12,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "more.",
+      "anfang": 7.28,
+      "ende": 7.72,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "Hook",
+      "anfang": 8,
+      "ende": 8.16,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 8.24,
+      "ende": 8.28,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "on",
+      "anfang": 8.32,
+      "ende": 8.4,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "a",
+      "anfang": 8.44,
+      "ende": 8.48,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "board",
+      "anfang": 8.56,
+      "ende": 8.8,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "and",
+      "anfang": 8.88,
+      "ende": 8.96,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "pull,",
+      "anfang": 9.12,
+      "ende": 9.6,
+      "satz": 4,
+      "schluessel": true
+    },
+    {
+      "text": "it",
+      "anfang": 9.68,
+      "ende": 9.84,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "slides",
+      "anfang": 10.04,
+      "ende": 10.24,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "out,",
+      "anfang": 10.32,
+      "ende": 10.72,
+      "satz": 4,
+      "schluessel": false
+    },
+    {
+      "text": "and",
+      "anfang": 10.8,
+      "ende": 10.88,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "zero",
+      "anfang": 10.96,
+      "ende": 11.28,
+      "satz": 5,
+      "schluessel": true
+    },
+    {
+      "text": "sits",
+      "anfang": 11.36,
+      "ende": 11.6,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "right",
+      "anfang": 11.76,
+      "ende": 11.92,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "where",
+      "anfang": 12,
+      "ende": 12.08,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 12.12,
+      "ende": 12.16,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "touches",
+      "anfang": 12.32,
+      "ende": 12.48,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "the",
+      "anfang": 12.56,
+      "ende": 12.64,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "board.",
+      "anfang": 12.8,
+      "ende": 13.28,
+      "satz": 5,
+      "schluessel": false
+    },
+    {
+      "text": "But",
+      "anfang": 13.6,
+      "ende": 13.76,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "push",
+      "anfang": 13.84,
+      "ende": 14,
+      "satz": 6,
+      "schluessel": true
+    },
+    {
+      "text": "it",
+      "anfang": 14.04,
+      "ende": 14.08,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "against",
+      "anfang": 14.16,
+      "ende": 14.4,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "a",
+      "anfang": 14.48,
+      "ende": 14.56,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "wall,",
+      "anfang": 14.64,
+      "ende": 15.28,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 15.36,
+      "ende": 15.44,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "slides",
+      "anfang": 15.52,
+      "ende": 15.92,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "in,",
+      "anfang": 16,
+      "ende": 16.56,
+      "satz": 6,
+      "schluessel": false
+    },
+    {
+      "text": "and",
+      "anfang": 16.64,
+      "ende": 16.72,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "zero",
+      "anfang": 16.8,
+      "ende": 17.12,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "sits",
+      "anfang": 17.2,
+      "ende": 17.44,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "right",
+      "anfang": 17.52,
+      "ende": 17.68,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "where",
+      "anfang": 17.76,
+      "ende": 17.84,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 17.92,
+      "ende": 18,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "touches",
+      "anfang": 18.16,
+      "ende": 18.32,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "the",
+      "anfang": 18.4,
+      "ende": 18.44,
+      "satz": 7,
+      "schluessel": false
+    },
+    {
+      "text": "wall.",
+      "anfang": 18.48,
+      "ende": 19.12,
+      "satz": 7,
+      "schluessel": true
+    },
+    {
+      "text": "So",
+      "anfang": 19.44,
+      "ende": 19.6,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "however",
+      "anfang": 19.68,
+      "ende": 20.08,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "you",
+      "anfang": 20.16,
+      "ende": 20.24,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "measure,",
+      "anfang": 20.32,
+      "ende": 20.88,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "its",
+      "anfang": 21,
+      "ende": 21.12,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "thickness",
+      "anfang": 21.2,
+      "ende": 21.6,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "never",
+      "anfang": 21.76,
+      "ende": 22,
+      "satz": 8,
+      "schluessel": true
+    },
+    {
+      "text": "sneaks",
+      "anfang": 22.08,
+      "ende": 22.32,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "into",
+      "anfang": 22.4,
+      "ende": 22.56,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "the",
+      "anfang": 22.6,
+      "ende": 22.64,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "reading.",
+      "anfang": 22.72,
+      "ende": 23.12,
+      "satz": 8,
+      "schluessel": false
+    },
+    {
+      "text": "Squeeze",
+      "anfang": 23.6,
+      "ende": 23.92,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 23.96,
+      "ende": 24,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "tight,",
+      "anfang": 24.08,
+      "ende": 24.64,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "and",
+      "anfang": 24.72,
+      "ende": 24.8,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "one",
+      "anfang": 24.88,
+      "ende": 24.96,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "of",
+      "anfang": 25.04,
+      "ende": 25.08,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "the",
+      "anfang": 25.12,
+      "ende": 25.2,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "two",
+      "anfang": 25.28,
+      "ende": 25.44,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "will",
+      "anfang": 25.6,
+      "ende": 25.76,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "always",
+      "anfang": 25.96,
+      "ende": 26.16,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "come",
+      "anfang": 26.24,
+      "ende": 26.32,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "out",
+      "anfang": 26.4,
+      "ende": 26.48,
+      "satz": 9,
+      "schluessel": false
+    },
+    {
+      "text": "wrong.",
+      "anfang": 26.56,
+      "ende": 27.36,
+      "satz": 9,
+      "schluessel": true
+    },
+    {
+      "text": "So",
+      "anfang": 27.44,
+      "ende": 27.52,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "yes,",
+      "anfang": 27.68,
+      "ende": 28.16,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "it's",
+      "anfang": 28.24,
+      "ende": 28.36,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "loose,",
+      "anfang": 28.4,
+      "ende": 29.12,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "but",
+      "anfang": 29.2,
+      "ende": 29.28,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "on",
+      "anfang": 29.36,
+      "ende": 29.44,
+      "satz": 10,
+      "schluessel": false
+    },
+    {
+      "text": "purpose.",
+      "anfang": 29.52,
+      "ende": 30,
+      "satz": 10,
+      "schluessel": true
+    },
+    {
+      "text": "Send",
+      "anfang": 30.56,
+      "ende": 30.72,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "this",
+      "anfang": 30.8,
+      "ende": 30.88,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "to",
+      "anfang": 30.96,
+      "ende": 31.04,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "that",
+      "anfang": 31.12,
+      "ende": 31.2,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "friend",
+      "anfang": 31.36,
+      "ende": 31.6,
+      "satz": 11,
+      "schluessel": true
+    },
+    {
+      "text": "who",
+      "anfang": 31.68,
+      "ende": 31.76,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "squeezed",
+      "anfang": 31.84,
+      "ende": 32.16,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "their",
+      "anfang": 32.24,
+      "ende": 32.32,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "tape",
+      "anfang": 32.4,
+      "ende": 32.64,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "measure",
+      "anfang": 32.8,
+      "ende": 32.96,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "hook",
+      "anfang": 33.08,
+      "ende": 33.2,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "thinking",
+      "anfang": 33.28,
+      "ende": 33.52,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "it",
+      "anfang": 33.56,
+      "ende": 33.6,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "was",
+      "anfang": 33.68,
+      "ende": 33.76,
+      "satz": 11,
+      "schluessel": false
+    },
+    {
+      "text": "broken.",
+      "anfang": 33.84,
+      "ende": 34.56,
+      "satz": 11,
+      "schluessel": false
+    }
+  ]
+}
