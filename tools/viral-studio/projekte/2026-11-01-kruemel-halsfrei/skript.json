@@ -1,0 +1,103 @@
+{
+  "titel": "Krümel und das HalsFrei-Geschirr (Hook B)",
+  "sprache": "de",
+  "untertitel": "mitte",
+  "gelb": [
+    "Ring",
+    "Riemchen",
+    "Polster",
+    "HalsFrei"
+  ],
+  "saetze": [
+    {
+      "text": "Kaum zu Hause, will ich nur noch raus aus dem Ding.",
+      "schluessel": "raus",
+      "hook": true
+    },
+    {
+      "text": "Damit ich nicht mehr so am Halsband zerre.",
+      "schluessel": "Halsband"
+    },
+    {
+      "text": "Gute Idee. Aber so richtig bequem war das Ding nie.",
+      "schluessel": "bequem"
+    },
+    {
+      "text": "Am Ring lag's nicht.",
+      "schluessel": "Ring"
+    },
+    {
+      "text": "Sondern an dem schmalen Riemchen vorne an meiner Brust.",
+      "schluessel": "Riemchen"
+    },
+    {
+      "text": "Bin ich losgestürmt, ist es dauernd verrutscht.",
+      "schluessel": "verrutscht"
+    },
+    {
+      "text": "Und unter den Vorderbeinen hat's ständig gezwickt.",
+      "schluessel": "gezwickt"
+    },
+    {
+      "text": "Spazierengehen? Ehrlich gesagt … eher so mittel.",
+      "schluessel": "mittel"
+    },
+    {
+      "text": "Frauchen hat's zigmal nachgestellt.",
+      "schluessel": "nachgestellt"
+    },
+    {
+      "text": "Aber ein schmales Riemchen bleibt ein schmales Riemchen.",
+      "schluessel": "Riemchen"
+    },
+    {
+      "text": "Was ich brauchte: ein breites, weiches Polster an der Brust.",
+      "schluessel": "Polster"
+    },
+    {
+      "text": "Da verteilt sich der Zug – und landet nicht am Hals.",
+      "schluessel": "Hals"
+    },
+    {
+      "text": "Und der Ring vorne lenkt mich beim Losziehen sanft zur Seite, zu Frauchen.",
+      "schluessel": "Ring"
+    },
+    {
+      "text": "So eins hat sie gefunden: HalsFrei.",
+      "schluessel": "HalsFrei"
+    },
+    {
+      "text": "Über den Kopf, Klick, fertig.",
+      "schluessel": "Klick"
+    },
+    {
+      "text": "Und mein Name steht drauf. Falls ich mal stiften geh.",
+      "schluessel": "Name"
+    },
+    {
+      "text": "Ziehen tu ich manchmal immer noch.",
+      "schluessel": "Ziehen"
+    },
+    {
+      "text": "Aber ich fühl mich drin wie in meiner Lieblingsdecke.",
+      "schluessel": "Lieblingsdecke"
+    },
+    {
+      "text": "Frauchen sagt: Der Versand ist gratis, die Größe tauschst du einfach um …",
+      "schluessel": "gratis"
+    },
+    {
+      "text": "… und du kannst es 30 Tage testen. Passt's nicht, gibt's das Geld zurück.",
+      "schluessel": "30 Tage",
+      "gesprochen": "… und du kannst es dreißig Tage testen. Passt's nicht, gibt's das Geld zurück."
+    },
+    {
+      "text": "Wenn dein Hund auch zieht: Schau's dir unten an.",
+      "schluessel": "unten"
+    },
+    {
+      "text": "Und alles fing damit an, dass …",
+      "schluessel": "an"
+    }
+  ]
+}
