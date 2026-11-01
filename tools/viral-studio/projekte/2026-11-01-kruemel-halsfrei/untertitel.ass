@@ -1,0 +1,74 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: U,Figtree ExtraBold,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,5,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.96,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Kaum zu Hause
+Dialogue: 0,0:00:00.96,0:00:01.84,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}will ich nur noch
+Dialogue: 0,0:00:01.84,0:00:03.20,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}raus aus dem Ding
+Dialogue: 0,0:00:03.20,0:00:03.84,U,,0,0,0,,{\pos(540,860)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Damit ich nicht mehr
+Dialogue: 0,0:00:03.84,0:00:05.52,U,,0,0,0,,{\pos(540,860)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}so am Halsband zerre
+Dialogue: 0,0:00:05.52,0:00:06.64,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Gute Idee
+Dialogue: 0,0:00:06.64,0:00:08.08,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Aber so richtig bequem
+Dialogue: 0,0:00:08.08,0:00:09.36,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}war das Ding nie
+Dialogue: 0,0:00:09.36,0:00:10.72,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Am {\c&H00D7FF&}Ring{\c&HFFFFFF&} lag's nicht
+Dialogue: 0,0:00:10.72,0:00:11.28,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Sondern an dem
+Dialogue: 0,0:00:11.28,0:00:12.60,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}schmalen {\c&H00D7FF&}Riemchen{\c&HFFFFFF&} vorne
+Dialogue: 0,0:00:12.60,0:00:13.84,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}an meiner Brust
+Dialogue: 0,0:00:13.84,0:00:14.99,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Bin ich losgestürmt
+Dialogue: 0,0:00:14.99,0:00:16.48,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}ist es dauernd verrutscht
+Dialogue: 0,0:00:16.48,0:00:17.68,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Und unter den Vorderbeinen
+Dialogue: 0,0:00:17.68,0:00:19.44,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}hat's ständig gezwickt
+Dialogue: 0,0:00:19.44,0:00:20.80,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Spazierengehen?
+Dialogue: 0,0:00:20.80,0:00:22.32,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Ehrlich gesagt eher
+Dialogue: 0,0:00:22.32,0:00:23.28,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}so mittel
+Dialogue: 0,0:00:23.28,0:00:25.52,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Frauchen hat's zigmal nachgestellt
+Dialogue: 0,0:00:25.52,0:00:26.96,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Aber ein schmales {\c&H00D7FF&}Riemchen{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.96,0:00:28.88,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}bleibt ein schmales {\c&H00D7FF&}Riemchen{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.88,0:00:30.08,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Was ich brauchte:
+Dialogue: 0,0:00:30.08,0:00:31.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}ein breites
+Dialogue: 0,0:00:31.04,0:00:32.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}weiches {\c&H00D7FF&}Polster{\c&HFFFFFF&} an
+Dialogue: 0,0:00:32.04,0:00:32.96,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}der Brust
+Dialogue: 0,0:00:32.96,0:00:33.76,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Da verteilt sich
+Dialogue: 0,0:00:33.76,0:00:34.92,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}der Zug und landet
+Dialogue: 0,0:00:34.92,0:00:36.00,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}nicht am Hals
+Dialogue: 0,0:00:36.00,0:00:36.96,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Und der {\c&H00D7FF&}Ring{\c&HFFFFFF&} vorne
+Dialogue: 0,0:00:36.96,0:00:37.68,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}lenkt mich beim
+Dialogue: 0,0:00:37.68,0:00:39.36,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Losziehen sanft zur Seite
+Dialogue: 0,0:00:39.36,0:00:40.48,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}zu Frauchen
+Dialogue: 0,0:00:40.48,0:00:41.16,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}So eins hat
+Dialogue: 0,0:00:41.16,0:00:42.16,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}sie gefunden:
+Dialogue: 0,0:00:42.16,0:00:43.20,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}{\c&H00D7FF&}HalsFrei{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.20,0:00:44.76,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Über den Kopf Klick
+Dialogue: 0,0:00:44.76,0:00:45.52,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}fertig
+Dialogue: 0,0:00:45.52,0:00:46.24,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Und mein Name
+Dialogue: 0,0:00:46.24,0:00:47.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}steht drauf
+Dialogue: 0,0:00:47.04,0:00:47.52,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Falls ich mal
+Dialogue: 0,0:00:47.52,0:00:48.56,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}stiften geh
+Dialogue: 0,0:00:48.56,0:00:49.28,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Ziehen tu ich
+Dialogue: 0,0:00:49.28,0:00:50.48,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}manchmal immer noch
+Dialogue: 0,0:00:50.48,0:00:51.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Aber ich fühl
+Dialogue: 0,0:00:51.04,0:00:51.76,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}mich drin wie
+Dialogue: 0,0:00:51.76,0:00:53.36,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}in meiner Lieblingsdecke
+Dialogue: 0,0:00:53.36,0:00:54.40,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Frauchen sagt:
+Dialogue: 0,0:00:54.40,0:00:55.84,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Der Versand ist gratis
+Dialogue: 0,0:00:55.84,0:00:56.76,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}die Größe tauschst
+Dialogue: 0,0:00:56.76,0:00:57.86,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}du einfach um
+Dialogue: 0,0:00:57.87,0:00:58.64,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}und du kannst es
+Dialogue: 0,0:00:58.64,0:01:00.16,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}30 Tage testen
+Dialogue: 0,0:01:00.16,0:01:01.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Passt's nicht
+Dialogue: 0,0:01:01.04,0:01:02.40,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}gibt's das Geld zurück
+Dialogue: 0,0:01:02.40,0:01:03.04,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Wenn dein Hund
+Dialogue: 0,0:01:03.04,0:01:03.92,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}auch zieht:
+Dialogue: 0,0:01:03.92,0:01:05.28,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Schau's dir unten an
+Dialogue: 0,0:01:05.28,0:01:06.12,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}Und alles fing
+Dialogue: 0,0:01:06.12,0:01:06.68,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}damit an
+Dialogue: 0,0:01:06.68,0:01:07.92,U,,0,0,0,,{\pos(540,1120)\fscx82\fscy82\t(0,120,\fscx100\fscy100)}dass
