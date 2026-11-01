@@ -18,4 +18,6 @@ Verworfen: erstes A1 (Geschirr kaum zu sehen), erstes A3 (fremder Hund im Bild).
 | 03 | https://www.canva.com/M/MAHZtLiU91I |
 | 04 | https://www.canva.com/M/MAHZtMhEcWc |
 
+Volle Größe liegt in `bilder/` (Export aus dem Canva-Design „Leere Krümel-Reel-Story“, https://www.canva.com/d/zPQDeIQGA_Rmtlm). Die Clips mit Kamerafahrt liegen in `clips/`.
+
 Clips 05-17 offen: Canva-Bildkontingent erschöpft (Stand 2026-11-01).
