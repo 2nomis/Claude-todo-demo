@@ -88,7 +88,7 @@
     },
     {
       "text": "… und du kannst es 30 Tage testen. Passt's nicht, gibt's das Geld zurück.",
-      "schluessel": "30 Tage",
+      "schluessel": "Tage",
       "gesprochen": "… und du kannst es dreißig Tage testen. Passt's nicht, gibt's das Geld zurück."
     },
     {
@@ -99,5 +99,10 @@
       "text": "Und alles fing damit an, dass …",
       "schluessel": "an"
     }
-  ]
+  ],
+  "stimme": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ",
+    "stabilitaet": 0.4,
+    "geschwindigkeit": 1.05
+  }
 }
