@@ -1,0 +1,111 @@
+{
+  "titel": "Rocky und der Ring (HalsFrei, UGC)",
+  "sprache": "de",
+  "untertitel": "mitte",
+  "saetze": [
+    {
+      "text": "Drei Jahre dachte ich, Rocky ist einfach so.",
+      "schluessel": "Rocky",
+      "hook": true
+    },
+    {
+      "text": "Dann hab ich einen Ring getauscht.",
+      "schluessel": "Ring",
+      "hook": true
+    },
+    {
+      "text": "Jeder Spaziergang war Armdrücken – und Rocky hat immer gewonnen.",
+      "schluessel": "Armdrücken"
+    },
+    {
+      "text": "Ich bin nur noch raus, wenn keiner unterwegs war.",
+      "schluessel": "keiner"
+    },
+    {
+      "text": "Leckerli.",
+      "schluessel": "Leckerli"
+    },
+    {
+      "text": "Videos.",
+      "schluessel": "Videos"
+    },
+    {
+      "text": "Ein Halsband nach dem anderen.",
+      "schluessel": "Halsband"
+    },
+    {
+      "text": "Besser wurde es kaum.",
+      "schluessel": "kaum"
+    },
+    {
+      "text": "Bis ich mir angeschaut hab, wo die Leine eigentlich zieht.",
+      "schluessel": "zieht"
+    },
+    {
+      "text": "Bei uns hing sie immer hinten am Rücken.",
+      "schluessel": "Rücken"
+    },
+    {
+      "text": "Und so kann sich Rocky voll reinlehnen – wie in ein Zuggeschirr.",
+      "schluessel": "Zuggeschirr"
+    },
+    {
+      "text": "Ich dachte immer: Mit Geschirr ziehen Hunde doch noch mehr.",
+      "schluessel": "mehr"
+    },
+    {
+      "text": "Stimmt – wenn die Leine hinten hängt.",
+      "schluessel": "hinten"
+    },
+    {
+      "text": "Vorne an der Brust eingehakt, lenkt ihn der Zug seitlich zu mir – statt nach vorn.",
+      "schluessel": "seitlich"
+    },
+    {
+      "text": "Also hab ich HalsFrei probiert: Ring vorne, gepolstert, mit Haltegriff.",
+      "schluessel": "HalsFrei"
+    },
+    {
+      "text": "Über den Kopf, Klick – fertig.",
+      "schluessel": "Klick"
+    },
+    {
+      "text": "Erste Runde: ein Eichhörnchen.",
+      "schluessel": "Eichhörnchen"
+    },
+    {
+      "text": "Rocky startet durch – und landet seitlich bei mir statt vorne in der Hecke.",
+      "schluessel": "seitlich"
+    },
+    {
+      "text": "Und der Ruck? Den federt die Ruckdämpfer-Leine ab.",
+      "schluessel": "Ruckdämpfer-Leine"
+    },
+    {
+      "text": "Heute sind unsere Runden viel entspannter.",
+      "schluessel": "entspannter"
+    },
+    {
+      "text": "Wir üben weiter – aber ohne Armdrücken.",
+      "schluessel": "Armdrücken"
+    },
+    {
+      "text": "Der Versand ist gratis, die Größe tauschst du einfach um – und du kannst es 30 Tage lang testen. Passt es nicht, gibt's dein Geld zurück.",
+      "schluessel": "gratis",
+      "gesprochen": "Der Versand ist gratis, die Größe tauschst du einfach um – und du kannst es dreißig Tage lang testen. Passt es nicht, gibt's dein Geld zurück."
+    },
+    {
+      "text": "Wenn du auch mit beiden Händen festhältst: Schau's dir an. Der Link ist unten.",
+      "schluessel": "unten"
+    },
+    {
+      "text": "Dabei lag's die ganze Zeit an einem Ring.",
+      "schluessel": "Ring"
+    }
+  ],
+  "stimme": {
+    "id": "EXAVITQu4vr4xnSDxMaL",
+    "stabilitaet": 0.4,
+    "geschwindigkeit": 1.0
+  }
+}
