@@ -4,7 +4,7 @@
   "untertitel": "mitte",
   "saetze": [
     {
-      "text": "Drei Jahre dachte ich, Rocky ist einfach so.",
+      "text": "Drei Jahre dachte ich: Rocky ist so.",
       "schluessel": "Rocky",
       "hook": true
     },
@@ -14,11 +14,11 @@
       "hook": true
     },
     {
-      "text": "Jeder Spaziergang war Armdrücken – und Rocky hat immer gewonnen.",
+      "text": "Jeder Gang war Armdrücken. Rocky hat gewonnen.",
       "schluessel": "Armdrücken"
     },
     {
-      "text": "Ich bin nur noch raus, wenn keiner unterwegs war.",
+      "text": "Raus nur noch, wenn keiner da war.",
       "schluessel": "keiner"
     },
     {
@@ -38,35 +38,35 @@
       "schluessel": "kaum"
     },
     {
-      "text": "Bis ich mir angeschaut hab, wo die Leine eigentlich zieht.",
+      "text": "Bis ich sah, wo die Leine zieht.",
       "schluessel": "zieht"
     },
     {
-      "text": "Bei uns hing sie immer hinten am Rücken.",
+      "text": "Bei uns: hinten am Rücken.",
       "schluessel": "Rücken"
     },
     {
-      "text": "Und so kann sich Rocky voll reinlehnen – wie in ein Zuggeschirr.",
-      "schluessel": "Zuggeschirr"
+      "text": "Da lehnt sich Rocky voll rein.",
+      "schluessel": "rein"
     },
     {
-      "text": "Ich dachte immer: Mit Geschirr ziehen Hunde doch noch mehr.",
-      "schluessel": "mehr"
+      "text": "Ich dachte: Geschirr macht Zieher.",
+      "schluessel": "Zieher"
     },
     {
-      "text": "Stimmt – wenn die Leine hinten hängt.",
+      "text": "Stimmt – wenn sie hinten hängt.",
       "schluessel": "hinten"
     },
     {
-      "text": "Vorne an der Brust eingehakt, lenkt ihn der Zug seitlich zu mir – statt nach vorn.",
-      "schluessel": "seitlich"
+      "text": "Vorne eingehakt, lenkt der Zug ihn zu mir.",
+      "schluessel": "Vorne"
     },
     {
-      "text": "Also hab ich HalsFrei probiert: Ring vorne, gepolstert, mit Haltegriff.",
+      "text": "Also HalsFrei: Ring vorne, gepolstert.",
       "schluessel": "HalsFrei"
     },
     {
-      "text": "Über den Kopf, Klick – fertig.",
+      "text": "Über den Kopf, Klick, fertig.",
       "schluessel": "Klick"
     },
     {
@@ -74,28 +74,28 @@
       "schluessel": "Eichhörnchen"
     },
     {
-      "text": "Rocky startet durch – und landet seitlich bei mir statt vorne in der Hecke.",
-      "schluessel": "seitlich"
+      "text": "Rocky startet – und landet bei mir.",
+      "schluessel": "mir"
     },
     {
-      "text": "Und der Ruck? Den federt die Ruckdämpfer-Leine ab.",
+      "text": "Den Ruck federt die Ruckdämpfer-Leine ab.",
       "schluessel": "Ruckdämpfer-Leine"
     },
     {
-      "text": "Heute sind unsere Runden viel entspannter.",
-      "schluessel": "entspannter"
+      "text": "Heute sind unsere Runden entspannt.",
+      "schluessel": "entspannt"
     },
     {
-      "text": "Wir üben weiter – aber ohne Armdrücken.",
+      "text": "Wir üben weiter – ohne Armdrücken.",
       "schluessel": "Armdrücken"
     },
     {
-      "text": "Der Versand ist gratis, die Größe tauschst du einfach um – und du kannst es 30 Tage lang testen. Passt es nicht, gibt's dein Geld zurück.",
+      "text": "Versand gratis, Größe tauschen, 30 Tage Geld zurück.",
       "schluessel": "gratis",
-      "gesprochen": "Der Versand ist gratis, die Größe tauschst du einfach um – und du kannst es dreißig Tage lang testen. Passt es nicht, gibt's dein Geld zurück."
+      "gesprochen": "Versand gratis, Größe tauschen, dreißig Tage Geld zurück."
     },
     {
-      "text": "Wenn du auch mit beiden Händen festhältst: Schau's dir an. Der Link ist unten.",
+      "text": "Hältst du auch mit beiden Händen fest? Link unten.",
       "schluessel": "unten"
     },
     {
@@ -106,6 +106,6 @@
   "stimme": {
     "id": "EXAVITQu4vr4xnSDxMaL",
     "stabilitaet": 0.4,
-    "geschwindigkeit": 1.0
+    "geschwindigkeit": 1.1
   }
 }

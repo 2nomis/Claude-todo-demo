@@ -1,174 +1,174 @@
 {
-  "signatur": "10c1a1b86b23",
-  "dauer": 80.48,
+  "signatur": "0afef5481bd7",
+  "dauer": 58.48,
   "saetze": [
     {
       "n": 1,
-      "text": "Drei Jahre dachte ich, Rocky ist einfach so.",
+      "text": "Drei Jahre dachte ich: Rocky ist so.",
       "schluessel": "Rocky",
       "anfang": 0,
-      "ende": 2.96
+      "ende": 2.56
     },
     {
       "n": 2,
       "text": "Dann hab ich einen Ring getauscht.",
       "schluessel": "Ring",
-      "anfang": 3.44,
-      "ende": 5.12
+      "anfang": 3.04,
+      "ende": 4.72
     },
     {
       "n": 3,
-      "text": "Jeder Spaziergang war Armdrücken – und Rocky hat immer gewonnen.",
+      "text": "Jeder Gang war Armdrücken. Rocky hat gewonnen.",
       "schluessel": "Armdrücken",
-      "anfang": 5.52,
-      "ende": 9.6
+      "anfang": 5.12,
+      "ende": 8.24
     },
     {
       "n": 4,
-      "text": "Ich bin nur noch raus, wenn keiner unterwegs war.",
+      "text": "Raus nur noch, wenn keiner da war.",
       "schluessel": "keiner",
-      "anfang": 9.84,
-      "ende": 12.36
+      "anfang": 8.64,
+      "ende": 10.76
     },
     {
       "n": 5,
       "text": "Leckerli.",
       "schluessel": "Leckerli",
-      "anfang": 12.56,
-      "ende": 13.12
+      "anfang": 10.96,
+      "ende": 11.52
     },
     {
       "n": 6,
       "text": "Videos.",
       "schluessel": "Videos",
-      "anfang": 13.44,
-      "ende": 14.28
+      "anfang": 11.84,
+      "ende": 12.6
     },
     {
       "n": 7,
       "text": "Ein Halsband nach dem anderen.",
       "schluessel": "Halsband",
-      "anfang": 14.48,
-      "ende": 16.16
+      "anfang": 12.8,
+      "ende": 14.48
     },
     {
       "n": 8,
       "text": "Besser wurde es kaum.",
       "schluessel": "kaum",
-      "anfang": 16.4,
-      "ende": 17.6
+      "anfang": 14.8,
+      "ende": 16.2
     },
     {
       "n": 9,
-      "text": "Bis ich mir angeschaut hab, wo die Leine eigentlich zieht.",
+      "text": "Bis ich sah, wo die Leine zieht.",
       "schluessel": "zieht",
-      "anfang": 18.08,
-      "ende": 21.12
+      "anfang": 16.48,
+      "ende": 18.24
     },
     {
       "n": 10,
-      "text": "Bei uns hing sie immer hinten am Rücken.",
+      "text": "Bei uns: hinten am Rücken.",
       "schluessel": "Rücken",
-      "anfang": 21.52,
-      "ende": 23.68
+      "anfang": 18.56,
+      "ende": 20.32
     },
     {
       "n": 11,
-      "text": "Und so kann sich Rocky voll reinlehnen – wie in ein Zuggeschirr.",
-      "schluessel": "Zuggeschirr",
-      "anfang": 23.84,
-      "ende": 27.6
+      "text": "Da lehnt sich Rocky voll rein.",
+      "schluessel": "rein",
+      "anfang": 20.64,
+      "ende": 22.64
     },
     {
       "n": 12,
-      "text": "Ich dachte immer: Mit Geschirr ziehen Hunde doch noch mehr.",
-      "schluessel": "mehr",
-      "anfang": 28,
-      "ende": 31.2
+      "text": "Ich dachte: Geschirr macht Zieher.",
+      "schluessel": "Zieher",
+      "anfang": 22.72,
+      "ende": 24.72
     },
     {
       "n": 13,
-      "text": "Stimmt – wenn die Leine hinten hängt.",
+      "text": "Stimmt – wenn sie hinten hängt.",
       "schluessel": "hinten",
-      "anfang": 31.6,
-      "ende": 33.76
+      "anfang": 25.12,
+      "ende": 26.8
     },
     {
       "n": 14,
-      "text": "Vorne an der Brust eingehakt, lenkt ihn der Zug seitlich zu mir – statt nach vorn.",
-      "schluessel": "seitlich",
-      "anfang": 34.24,
-      "ende": 38.96
+      "text": "Vorne eingehakt, lenkt der Zug ihn zu mir.",
+      "schluessel": "Vorne",
+      "anfang": 27.28,
+      "ende": 29.76
     },
     {
       "n": 15,
-      "text": "Also hab ich HalsFrei probiert: Ring vorne, gepolstert, mit Haltegriff.",
+      "text": "Also HalsFrei: Ring vorne, gepolstert.",
       "schluessel": "HalsFrei",
-      "anfang": 39.44,
-      "ende": 44.32
+      "anfang": 30.08,
+      "ende": 33.36
     },
     {
       "n": 16,
-      "text": "Über den Kopf, Klick – fertig.",
+      "text": "Über den Kopf, Klick, fertig.",
       "schluessel": "Klick",
-      "anfang": 44.72,
-      "ende": 47.12
+      "anfang": 33.52,
+      "ende": 35.52
     },
     {
       "n": 17,
       "text": "Erste Runde: ein Eichhörnchen.",
       "schluessel": "Eichhörnchen",
-      "anfang": 47.36,
-      "ende": 49.44
+      "anfang": 35.92,
+      "ende": 37.92
     },
     {
       "n": 18,
-      "text": "Rocky startet durch – und landet seitlich bei mir statt vorne in der Hecke.",
-      "schluessel": "seitlich",
-      "anfang": 49.84,
-      "ende": 54.2
+      "text": "Rocky startet – und landet bei mir.",
+      "schluessel": "mir",
+      "anfang": 38.08,
+      "ende": 40.4
     },
     {
       "n": 19,
-      "text": "Und der Ruck? Den federt die Ruckdämpfer-Leine ab.",
+      "text": "Den Ruck federt die Ruckdämpfer-Leine ab.",
       "schluessel": "Ruckdämpfer-Leine",
-      "anfang": 54.4,
-      "ende": 57.52
+      "anfang": 40.8,
+      "ende": 43.16
     },
     {
       "n": 20,
-      "text": "Heute sind unsere Runden viel entspannter.",
-      "schluessel": "entspannter",
-      "anfang": 57.92,
-      "ende": 60.48
+      "text": "Heute sind unsere Runden entspannt.",
+      "schluessel": "entspannt",
+      "anfang": 43.36,
+      "ende": 45.36
     },
     {
       "n": 21,
-      "text": "Wir üben weiter – aber ohne Armdrücken.",
+      "text": "Wir üben weiter – ohne Armdrücken.",
       "schluessel": "Armdrücken",
-      "anfang": 60.64,
-      "ende": 63.12
+      "anfang": 45.52,
+      "ende": 47.84
     },
     {
       "n": 22,
-      "text": "Der Versand ist gratis, die Größe tauschst du einfach um – und du kannst es 30 Tage lang testen. Passt es nicht, gibt's dein Geld zurück.",
+      "text": "Versand gratis, Größe tauschen, 30 Tage Geld zurück.",
       "schluessel": "gratis",
-      "anfang": 63.52,
-      "ende": 71.84
+      "anfang": 48.08,
+      "ende": 51.44
     },
     {
       "n": 23,
-      "text": "Wenn du auch mit beiden Händen festhältst: Schau's dir an. Der Link ist unten.",
+      "text": "Hältst du auch mit beiden Händen fest? Link unten.",
       "schluessel": "unten",
-      "anfang": 72.32,
-      "ende": 76.68
+      "anfang": 51.76,
+      "ende": 54.48
     },
     {
       "n": 24,
       "text": "Dabei lag's die ganze Zeit an einem Ring.",
       "schluessel": "Ring",
-      "anfang": 76.88,
-      "ende": 79.68
+      "anfang": 54.88,
+      "ende": 57.68
     }
   ],
   "woerter": [
@@ -188,15 +188,15 @@
     },
     {
       "text": "dachte",
-      "anfang": 0.8,
-      "ende": 1.12,
+      "anfang": 0.76,
+      "ende": 1.04,
       "satz": 1,
       "schluessel": false
     },
     {
-      "text": "ich,",
-      "anfang": 1.2,
-      "ende": 1.6,
+      "text": "ich:",
+      "anfang": 1.12,
+      "ende": 1.52,
       "satz": 1,
       "schluessel": false
     },
@@ -215,1374 +215,905 @@
       "schluessel": false
     },
     {
-      "text": "einfach",
-      "anfang": 2.28,
-      "ende": 2.64,
-      "satz": 1,
-      "schluessel": false
-    },
-    {
       "text": "so.",
-      "anfang": 2.76,
-      "ende": 2.96,
+      "anfang": 2.36,
+      "ende": 2.56,
       "satz": 1,
       "schluessel": false
     },
     {
       "text": "Dann",
-      "anfang": 3.44,
-      "ende": 3.68,
+      "anfang": 3.04,
+      "ende": 3.28,
       "satz": 2,
       "schluessel": false
     },
     {
       "text": "hab",
-      "anfang": 3.76,
-      "ende": 3.84,
+      "anfang": 3.36,
+      "ende": 3.44,
       "satz": 2,
       "schluessel": false
     },
     {
       "text": "ich",
-      "anfang": 3.92,
-      "ende": 4,
+      "anfang": 3.52,
+      "ende": 3.6,
       "satz": 2,
       "schluessel": false
     },
     {
       "text": "einen",
-      "anfang": 4.04,
-      "ende": 4.24,
+      "anfang": 3.64,
+      "ende": 3.84,
       "satz": 2,
       "schluessel": false
     },
     {
       "text": "Ring",
-      "anfang": 4.32,
-      "ende": 4.48,
+      "anfang": 3.92,
+      "ende": 4.08,
       "satz": 2,
       "schluessel": true
     },
     {
       "text": "getauscht.",
-      "anfang": 4.6,
-      "ende": 5.12,
+      "anfang": 4.2,
+      "ende": 4.72,
       "satz": 2,
       "schluessel": false
     },
     {
       "text": "Jeder",
+      "anfang": 5.12,
+      "ende": 5.44,
+      "satz": 3,
+      "schluessel": false
+    },
+    {
+      "text": "Gang",
       "anfang": 5.52,
       "ende": 5.76,
       "satz": 3,
       "schluessel": false
     },
     {
-      "text": "Spaziergang",
-      "anfang": 5.84,
-      "ende": 6.48,
-      "satz": 3,
-      "schluessel": false
-    },
-    {
       "text": "war",
-      "anfang": 6.56,
-      "ende": 6.64,
+      "anfang": 5.88,
+      "ende": 6,
       "satz": 3,
       "schluessel": false
     },
     {
-      "text": "Armdrücken",
-      "anfang": 6.72,
-      "ende": 7.36,
+      "text": "Armdrücken.",
+      "anfang": 6.08,
+      "ende": 6.88,
       "satz": 3,
       "schluessel": true
     },
     {
-      "text": "und",
-      "anfang": 7.787,
-      "ende": 7.84,
-      "satz": 3,
-      "schluessel": false
-    },
-    {
       "text": "Rocky",
-      "anfang": 7.92,
-      "ende": 8.24,
+      "anfang": 7.2,
+      "ende": 7.52,
       "satz": 3,
       "schluessel": false
     },
     {
       "text": "hat",
-      "anfang": 8.32,
-      "ende": 8.48,
-      "satz": 3,
-      "schluessel": false
-    },
-    {
-      "text": "immer",
-      "anfang": 8.56,
-      "ende": 8.8,
+      "anfang": 7.6,
+      "ende": 7.68,
       "satz": 3,
       "schluessel": false
     },
     {
       "text": "gewonnen.",
-      "anfang": 8.92,
-      "ende": 9.6,
+      "anfang": 7.76,
+      "ende": 8.24,
       "satz": 3,
       "schluessel": false
     },
     {
-      "text": "Ich",
-      "anfang": 9.84,
-      "ende": 10,
-      "satz": 4,
-      "schluessel": false
-    },
-    {
-      "text": "bin",
-      "anfang": 10.08,
-      "ende": 10.16,
+      "text": "Raus",
+      "anfang": 8.64,
+      "ende": 8.96,
       "satz": 4,
       "schluessel": false
     },
     {
       "text": "nur",
-      "anfang": 10.213,
-      "ende": 10.32,
+      "anfang": 9,
+      "ende": 9.12,
       "satz": 4,
       "schluessel": false
     },
     {
-      "text": "noch",
-      "anfang": 10.4,
-      "ende": 10.48,
-      "satz": 4,
-      "schluessel": false
-    },
-    {
-      "text": "raus,",
-      "anfang": 10.56,
-      "ende": 10.84,
+      "text": "noch,",
+      "anfang": 9.2,
+      "ende": 9.4,
       "satz": 4,
       "schluessel": false
     },
     {
       "text": "wenn",
-      "anfang": 10.88,
-      "ende": 10.96,
+      "anfang": 9.44,
+      "ende": 9.6,
       "satz": 4,
       "schluessel": false
     },
     {
       "text": "keiner",
-      "anfang": 11.04,
-      "ende": 11.36,
+      "anfang": 9.68,
+      "ende": 10,
       "satz": 4,
       "schluessel": true
     },
     {
-      "text": "unterwegs",
-      "anfang": 11.52,
-      "ende": 11.92,
+      "text": "da",
+      "anfang": 10.08,
+      "ende": 10.24,
       "satz": 4,
       "schluessel": false
     },
     {
       "text": "war.",
-      "anfang": 12.04,
-      "ende": 12.36,
+      "anfang": 10.32,
+      "ende": 10.76,
       "satz": 4,
       "schluessel": false
     },
     {
       "text": "Leckerli.",
-      "anfang": 12.56,
-      "ende": 13.12,
+      "anfang": 10.96,
+      "ende": 11.52,
       "satz": 5,
       "schluessel": true
     },
     {
       "text": "Videos.",
-      "anfang": 13.44,
-      "ende": 14.28,
+      "anfang": 11.84,
+      "ende": 12.6,
       "satz": 6,
       "schluessel": true
     },
     {
       "text": "Ein",
-      "anfang": 14.48,
-      "ende": 14.72,
+      "anfang": 12.8,
+      "ende": 13.04,
       "satz": 7,
       "schluessel": false
     },
     {
       "text": "Halsband",
-      "anfang": 14.8,
-      "ende": 15.28,
+      "anfang": 13.12,
+      "ende": 13.6,
       "satz": 7,
       "schluessel": true
     },
     {
       "text": "nach",
-      "anfang": 15.333,
-      "ende": 15.44,
+      "anfang": 13.64,
+      "ende": 13.76,
       "satz": 7,
       "schluessel": false
     },
     {
       "text": "dem",
-      "anfang": 15.52,
-      "ende": 15.6,
+      "anfang": 13.84,
+      "ende": 13.92,
       "satz": 7,
       "schluessel": false
     },
     {
       "text": "anderen.",
-      "anfang": 15.68,
-      "ende": 16.16,
+      "anfang": 14,
+      "ende": 14.48,
       "satz": 7,
       "schluessel": false
     },
     {
       "text": "Besser",
-      "anfang": 16.4,
-      "ende": 16.72,
+      "anfang": 14.8,
+      "ende": 15.12,
       "satz": 8,
       "schluessel": false
     },
     {
       "text": "wurde",
-      "anfang": 16.8,
-      "ende": 17.04,
+      "anfang": 15.16,
+      "ende": 15.36,
       "satz": 8,
       "schluessel": false
     },
     {
       "text": "es",
-      "anfang": 17.12,
-      "ende": 17.2,
+      "anfang": 15.44,
+      "ende": 15.6,
       "satz": 8,
       "schluessel": false
     },
     {
       "text": "kaum.",
-      "anfang": 17.28,
-      "ende": 17.6,
+      "anfang": 15.68,
+      "ende": 16.2,
       "satz": 8,
       "schluessel": true
     },
     {
       "text": "Bis",
-      "anfang": 18.08,
-      "ende": 18.16,
+      "anfang": 16.48,
+      "ende": 16.64,
       "satz": 9,
       "schluessel": false
     },
     {
       "text": "ich",
-      "anfang": 18.24,
-      "ende": 18.32,
+      "anfang": 16.72,
+      "ende": 16.8,
       "satz": 9,
       "schluessel": false
     },
     {
-      "text": "mir",
-      "anfang": 18.4,
-      "ende": 18.48,
-      "satz": 9,
-      "schluessel": false
-    },
-    {
-      "text": "angeschaut",
-      "anfang": 18.64,
-      "ende": 19.04,
-      "satz": 9,
-      "schluessel": false
-    },
-    {
-      "text": "hab,",
-      "anfang": 19.12,
-      "ende": 19.44,
+      "text": "sah,",
+      "anfang": 16.88,
+      "ende": 17.12,
       "satz": 9,
       "schluessel": false
     },
     {
       "text": "wo",
-      "anfang": 19.52,
-      "ende": 19.6,
+      "anfang": 17.2,
+      "ende": 17.28,
       "satz": 9,
       "schluessel": false
     },
     {
       "text": "die",
-      "anfang": 19.68,
-      "ende": 19.76,
+      "anfang": 17.32,
+      "ende": 17.36,
       "satz": 9,
       "schluessel": false
     },
     {
       "text": "Leine",
-      "anfang": 19.84,
-      "ende": 20.16,
-      "satz": 9,
-      "schluessel": false
-    },
-    {
-      "text": "eigentlich",
-      "anfang": 20.24,
-      "ende": 20.64,
+      "anfang": 17.44,
+      "ende": 17.76,
       "satz": 9,
       "schluessel": false
     },
     {
       "text": "zieht.",
-      "anfang": 20.72,
-      "ende": 21.12,
+      "anfang": 17.84,
+      "ende": 18.24,
       "satz": 9,
       "schluessel": true
     },
     {
       "text": "Bei",
-      "anfang": 21.52,
-      "ende": 21.68,
+      "anfang": 18.56,
+      "ende": 18.72,
       "satz": 10,
       "schluessel": false
     },
     {
-      "text": "uns",
-      "anfang": 21.8,
-      "ende": 21.92,
-      "satz": 10,
-      "schluessel": false
-    },
-    {
-      "text": "hing",
-      "anfang": 21.96,
-      "ende": 22.08,
-      "satz": 10,
-      "schluessel": false
-    },
-    {
-      "text": "sie",
-      "anfang": 22.16,
-      "ende": 22.32,
-      "satz": 10,
-      "schluessel": false
-    },
-    {
-      "text": "immer",
-      "anfang": 22.44,
-      "ende": 22.56,
+      "text": "uns:",
+      "anfang": 18.8,
+      "ende": 19.12,
       "satz": 10,
       "schluessel": false
     },
     {
       "text": "hinten",
-      "anfang": 22.64,
-      "ende": 22.96,
+      "anfang": 19.36,
+      "ende": 19.68,
       "satz": 10,
       "schluessel": false
     },
     {
       "text": "am",
-      "anfang": 23.04,
-      "ende": 23.12,
+      "anfang": 19.76,
+      "ende": 19.84,
       "satz": 10,
       "schluessel": false
     },
     {
       "text": "Rücken.",
-      "anfang": 23.16,
-      "ende": 23.68,
+      "anfang": 19.92,
+      "ende": 20.32,
       "satz": 10,
       "schluessel": true
     },
     {
-      "text": "Und",
-      "anfang": 23.84,
-      "ende": 24,
+      "text": "Da",
+      "anfang": 20.64,
+      "ende": 20.72,
       "satz": 11,
       "schluessel": false
     },
     {
-      "text": "so",
-      "anfang": 24.08,
-      "ende": 24.16,
-      "satz": 11,
-      "schluessel": false
-    },
-    {
-      "text": "kann",
-      "anfang": 24.24,
-      "ende": 24.4,
+      "text": "lehnt",
+      "anfang": 20.8,
+      "ende": 20.96,
       "satz": 11,
       "schluessel": false
     },
     {
       "text": "sich",
-      "anfang": 24.48,
-      "ende": 24.56,
+      "anfang": 21,
+      "ende": 21.12,
       "satz": 11,
       "schluessel": false
     },
     {
       "text": "Rocky",
-      "anfang": 24.64,
-      "ende": 25.04,
+      "anfang": 21.2,
+      "ende": 21.52,
       "satz": 11,
       "schluessel": false
     },
     {
       "text": "voll",
-      "anfang": 25.12,
-      "ende": 25.36,
+      "anfang": 21.68,
+      "ende": 21.92,
       "satz": 11,
       "schluessel": false
     },
     {
-      "text": "reinlehnen",
-      "anfang": 25.44,
-      "ende": 26,
-      "satz": 11,
-      "schluessel": false
-    },
-    {
-      "text": "wie",
-      "anfang": 26.4,
-      "ende": 26.48,
-      "satz": 11,
-      "schluessel": false
-    },
-    {
-      "text": "in",
-      "anfang": 26.56,
-      "ende": 26.64,
-      "satz": 11,
-      "schluessel": false
-    },
-    {
-      "text": "ein",
-      "anfang": 26.72,
-      "ende": 26.8,
-      "satz": 11,
-      "schluessel": false
-    },
-    {
-      "text": "Zuggeschirr.",
-      "anfang": 26.88,
-      "ende": 27.6,
+      "text": "rein.",
+      "anfang": 22,
+      "ende": 22.64,
       "satz": 11,
       "schluessel": true
     },
     {
       "text": "Ich",
-      "anfang": 28,
-      "ende": 28.16,
+      "anfang": 22.72,
+      "ende": 22.8,
       "satz": 12,
       "schluessel": false
     },
     {
-      "text": "dachte",
-      "anfang": 28.24,
-      "ende": 28.4,
-      "satz": 12,
-      "schluessel": false
-    },
-    {
-      "text": "immer:",
-      "anfang": 28.48,
-      "ende": 28.8,
-      "satz": 12,
-      "schluessel": false
-    },
-    {
-      "text": "Mit",
-      "anfang": 29.12,
-      "ende": 29.28,
+      "text": "dachte:",
+      "anfang": 22.88,
+      "ende": 23.28,
       "satz": 12,
       "schluessel": false
     },
     {
       "text": "Geschirr",
-      "anfang": 29.36,
-      "ende": 29.76,
+      "anfang": 23.52,
+      "ende": 23.92,
       "satz": 12,
       "schluessel": false
     },
     {
-      "text": "ziehen",
-      "anfang": 29.84,
-      "ende": 30.08,
+      "text": "macht",
+      "anfang": 24,
+      "ende": 24.24,
       "satz": 12,
       "schluessel": false
     },
     {
-      "text": "Hunde",
-      "anfang": 30.12,
-      "ende": 30.32,
-      "satz": 12,
-      "schluessel": false
-    },
-    {
-      "text": "doch",
-      "anfang": 30.4,
-      "ende": 30.56,
-      "satz": 12,
-      "schluessel": false
-    },
-    {
-      "text": "noch",
-      "anfang": 30.64,
-      "ende": 30.72,
-      "satz": 12,
-      "schluessel": false
-    },
-    {
-      "text": "mehr.",
-      "anfang": 30.8,
-      "ende": 31.2,
+      "text": "Zieher.",
+      "anfang": 24.28,
+      "ende": 24.72,
       "satz": 12,
       "schluessel": true
     },
     {
       "text": "Stimmt",
-      "anfang": 31.6,
-      "ende": 32,
+      "anfang": 25.12,
+      "ende": 25.44,
       "satz": 13,
       "schluessel": false
     },
     {
       "text": "wenn",
-      "anfang": 32.4,
-      "ende": 32.56,
+      "anfang": 25.813,
+      "ende": 25.92,
       "satz": 13,
       "schluessel": false
     },
     {
-      "text": "die",
-      "anfang": 32.6,
-      "ende": 32.64,
-      "satz": 13,
-      "schluessel": false
-    },
-    {
-      "text": "Leine",
-      "anfang": 32.72,
-      "ende": 32.96,
+      "text": "sie",
+      "anfang": 26,
+      "ende": 26.08,
       "satz": 13,
       "schluessel": false
     },
     {
       "text": "hinten",
-      "anfang": 33.04,
-      "ende": 33.36,
+      "anfang": 26.2,
+      "ende": 26.4,
       "satz": 13,
       "schluessel": true
     },
     {
       "text": "hängt.",
-      "anfang": 33.4,
-      "ende": 33.76,
+      "anfang": 26.48,
+      "ende": 26.8,
       "satz": 13,
       "schluessel": false
     },
     {
       "text": "Vorne",
-      "anfang": 34.24,
-      "ende": 34.56,
+      "anfang": 27.28,
+      "ende": 27.6,
       "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "an",
-      "anfang": 34.6,
-      "ende": 34.64,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "der",
-      "anfang": 34.72,
-      "ende": 34.8,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "Brust",
-      "anfang": 34.88,
-      "ende": 35.2,
-      "satz": 14,
-      "schluessel": false
+      "schluessel": true
     },
     {
       "text": "eingehakt,",
-      "anfang": 35.32,
-      "ende": 36,
+      "anfang": 27.72,
+      "ende": 28.4,
       "satz": 14,
       "schluessel": false
     },
     {
       "text": "lenkt",
-      "anfang": 36.08,
-      "ende": 36.24,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "ihn",
-      "anfang": 36.32,
-      "ende": 36.4,
+      "anfang": 28.48,
+      "ende": 28.64,
       "satz": 14,
       "schluessel": false
     },
     {
       "text": "der",
-      "anfang": 36.48,
-      "ende": 36.56,
+      "anfang": 28.72,
+      "ende": 28.8,
       "satz": 14,
       "schluessel": false
     },
     {
       "text": "Zug",
-      "anfang": 36.64,
-      "ende": 36.88,
+      "anfang": 28.88,
+      "ende": 29.04,
       "satz": 14,
       "schluessel": false
     },
     {
-      "text": "seitlich",
-      "anfang": 36.96,
-      "ende": 37.36,
+      "text": "ihn",
+      "anfang": 29.12,
+      "ende": 29.2,
       "satz": 14,
-      "schluessel": true
+      "schluessel": false
     },
     {
       "text": "zu",
-      "anfang": 37.44,
-      "ende": 37.52,
+      "anfang": 29.28,
+      "ende": 29.36,
       "satz": 14,
       "schluessel": false
     },
     {
-      "text": "mir",
-      "anfang": 37.6,
-      "ende": 37.84,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "statt",
-      "anfang": 38.24,
-      "ende": 38.32,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "nach",
-      "anfang": 38.36,
-      "ende": 38.48,
-      "satz": 14,
-      "schluessel": false
-    },
-    {
-      "text": "vorn.",
-      "anfang": 38.56,
-      "ende": 38.96,
+      "text": "mir.",
+      "anfang": 29.44,
+      "ende": 29.76,
       "satz": 14,
       "schluessel": false
     },
     {
       "text": "Also",
-      "anfang": 39.44,
-      "ende": 39.76,
+      "anfang": 30.08,
+      "ende": 30.4,
       "satz": 15,
       "schluessel": false
     },
     {
-      "text": "hab",
-      "anfang": 39.84,
-      "ende": 39.92,
-      "satz": 15,
-      "schluessel": false
-    },
-    {
-      "text": "ich",
-      "anfang": 40,
-      "ende": 40.08,
-      "satz": 15,
-      "schluessel": false
-    },
-    {
-      "text": "HalsFrei",
-      "anfang": 40.16,
-      "ende": 40.68,
+      "text": "HalsFrei:",
+      "anfang": 30.56,
+      "ende": 31.2,
       "satz": 15,
       "schluessel": true
     },
     {
-      "text": "probiert:",
-      "anfang": 40.72,
-      "ende": 41.28,
-      "satz": 15,
-      "schluessel": false
-    },
-    {
       "text": "Ring",
-      "anfang": 41.6,
-      "ende": 41.84,
+      "anfang": 31.6,
+      "ende": 31.84,
       "satz": 15,
       "schluessel": false
     },
     {
       "text": "vorne,",
-      "anfang": 41.88,
-      "ende": 42.32,
+      "anfang": 31.92,
+      "ende": 32.32,
       "satz": 15,
       "schluessel": false
     },
     {
-      "text": "gepolstert,",
-      "anfang": 42.56,
-      "ende": 43.44,
-      "satz": 15,
-      "schluessel": false
-    },
-    {
-      "text": "mit",
-      "anfang": 43.52,
-      "ende": 43.6,
-      "satz": 15,
-      "schluessel": false
-    },
-    {
-      "text": "Haltegriff.",
-      "anfang": 43.68,
-      "ende": 44.32,
+      "text": "gepolstert.",
+      "anfang": 32.48,
+      "ende": 33.36,
       "satz": 15,
       "schluessel": false
     },
     {
       "text": "Über",
-      "anfang": 44.72,
-      "ende": 44.88,
+      "anfang": 33.52,
+      "ende": 33.6,
       "satz": 16,
       "schluessel": false
     },
     {
       "text": "den",
-      "anfang": 44.96,
-      "ende": 45.04,
+      "anfang": 33.68,
+      "ende": 33.76,
       "satz": 16,
       "schluessel": false
     },
     {
       "text": "Kopf,",
-      "anfang": 45.12,
-      "ende": 45.68,
+      "anfang": 33.84,
+      "ende": 34.32,
       "satz": 16,
       "schluessel": false
     },
     {
-      "text": "Klick",
-      "anfang": 45.76,
-      "ende": 45.92,
+      "text": "Klick,",
+      "anfang": 34.4,
+      "ende": 34.88,
       "satz": 16,
       "schluessel": true
     },
     {
       "text": "fertig.",
-      "anfang": 46.373,
-      "ende": 47.12,
+      "anfang": 34.96,
+      "ende": 35.52,
       "satz": 16,
       "schluessel": false
     },
     {
       "text": "Erste",
-      "anfang": 47.36,
-      "ende": 47.68,
+      "anfang": 35.92,
+      "ende": 36.24,
       "satz": 17,
       "schluessel": false
     },
     {
       "text": "Runde:",
-      "anfang": 47.72,
-      "ende": 48.24,
+      "anfang": 36.28,
+      "ende": 36.64,
       "satz": 17,
       "schluessel": false
     },
     {
       "text": "ein",
-      "anfang": 48.4,
-      "ende": 48.56,
+      "anfang": 36.88,
+      "ende": 36.96,
       "satz": 17,
       "schluessel": false
     },
     {
       "text": "Eichhörnchen.",
-      "anfang": 48.64,
-      "ende": 49.44,
+      "anfang": 37.04,
+      "ende": 37.92,
       "satz": 17,
       "schluessel": true
     },
     {
       "text": "Rocky",
-      "anfang": 49.84,
-      "ende": 50.16,
+      "anfang": 38.08,
+      "ende": 38.32,
       "satz": 18,
       "schluessel": false
     },
     {
       "text": "startet",
-      "anfang": 50.24,
-      "ende": 50.64,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "durch",
-      "anfang": 50.68,
-      "ende": 50.96,
+      "anfang": 38.4,
+      "ende": 38.88,
       "satz": 18,
       "schluessel": false
     },
     {
       "text": "und",
-      "anfang": 51.307,
-      "ende": 51.36,
+      "anfang": 39.36,
+      "ende": 39.44,
       "satz": 18,
       "schluessel": false
     },
     {
       "text": "landet",
-      "anfang": 51.44,
-      "ende": 51.76,
+      "anfang": 39.52,
+      "ende": 39.84,
       "satz": 18,
       "schluessel": false
     },
     {
-      "text": "seitlich",
-      "anfang": 51.84,
-      "ende": 52.24,
+      "text": "bei",
+      "anfang": 39.92,
+      "ende": 40,
+      "satz": 18,
+      "schluessel": false
+    },
+    {
+      "text": "mir.",
+      "anfang": 40.08,
+      "ende": 40.4,
       "satz": 18,
       "schluessel": true
     },
     {
-      "text": "bei",
-      "anfang": 52.32,
-      "ende": 52.4,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "mir",
-      "anfang": 52.48,
-      "ende": 52.64,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "statt",
-      "anfang": 52.72,
-      "ende": 52.96,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "vorne",
-      "anfang": 53.04,
-      "ende": 53.36,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "in",
-      "anfang": 53.4,
-      "ende": 53.44,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "der",
-      "anfang": 53.52,
-      "ende": 53.6,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "Hecke.",
-      "anfang": 53.64,
-      "ende": 54.2,
-      "satz": 18,
-      "schluessel": false
-    },
-    {
-      "text": "Und",
-      "anfang": 54.4,
-      "ende": 54.56,
-      "satz": 19,
-      "schluessel": false
-    },
-    {
-      "text": "der",
-      "anfang": 54.64,
-      "ende": 54.72,
-      "satz": 19,
-      "schluessel": false
-    },
-    {
-      "text": "Ruck?",
-      "anfang": 54.76,
-      "ende": 55.28,
-      "satz": 19,
-      "schluessel": false
-    },
-    {
       "text": "Den",
-      "anfang": 55.52,
-      "ende": 55.68,
+      "anfang": 40.8,
+      "ende": 40.96,
+      "satz": 19,
+      "schluessel": false
+    },
+    {
+      "text": "Ruck",
+      "anfang": 41.04,
+      "ende": 41.28,
       "satz": 19,
       "schluessel": false
     },
     {
       "text": "federt",
-      "anfang": 55.76,
-      "ende": 56.08,
+      "anfang": 41.36,
+      "ende": 41.68,
       "satz": 19,
       "schluessel": false
     },
     {
       "text": "die",
-      "anfang": 56.16,
-      "ende": 56.24,
+      "anfang": 41.72,
+      "ende": 41.76,
       "satz": 19,
       "schluessel": false
     },
     {
       "text": "Ruckdämpfer-Leine",
-      "anfang": 56.32,
-      "ende": 57.2,
+      "anfang": 41.84,
+      "ende": 42.72,
       "satz": 19,
       "schluessel": true
     },
     {
       "text": "ab.",
-      "anfang": 57.28,
-      "ende": 57.52,
+      "anfang": 42.84,
+      "ende": 43.16,
       "satz": 19,
       "schluessel": false
     },
     {
       "text": "Heute",
-      "anfang": 57.92,
-      "ende": 58.24,
+      "anfang": 43.36,
+      "ende": 43.68,
       "satz": 20,
       "schluessel": false
     },
     {
       "text": "sind",
-      "anfang": 58.293,
-      "ende": 58.4,
+      "anfang": 43.72,
+      "ende": 43.84,
       "satz": 20,
       "schluessel": false
     },
     {
       "text": "unsere",
-      "anfang": 58.48,
-      "ende": 58.8,
+      "anfang": 43.92,
+      "ende": 44.16,
       "satz": 20,
       "schluessel": false
     },
     {
       "text": "Runden",
-      "anfang": 58.88,
-      "ende": 59.2,
+      "anfang": 44.24,
+      "ende": 44.56,
       "satz": 20,
       "schluessel": false
     },
     {
-      "text": "viel",
-      "anfang": 59.36,
-      "ende": 59.6,
-      "satz": 20,
-      "schluessel": false
-    },
-    {
-      "text": "entspannter.",
-      "anfang": 59.72,
-      "ende": 60.48,
+      "text": "entspannt.",
+      "anfang": 44.64,
+      "ende": 45.36,
       "satz": 20,
       "schluessel": true
     },
     {
       "text": "Wir",
-      "anfang": 60.64,
-      "ende": 60.72,
+      "anfang": 45.52,
+      "ende": 45.6,
       "satz": 21,
       "schluessel": false
     },
     {
       "text": "üben",
-      "anfang": 60.8,
-      "ende": 60.96,
+      "anfang": 45.68,
+      "ende": 45.84,
       "satz": 21,
       "schluessel": false
     },
     {
       "text": "weiter",
-      "anfang": 61.04,
-      "ende": 61.44,
-      "satz": 21,
-      "schluessel": false
-    },
-    {
-      "text": "aber",
-      "anfang": 61.92,
-      "ende": 62,
+      "anfang": 45.92,
+      "ende": 46.32,
       "satz": 21,
       "schluessel": false
     },
     {
       "text": "ohne",
-      "anfang": 62.16,
-      "ende": 62.4,
+      "anfang": 46.72,
+      "ende": 46.88,
       "satz": 21,
       "schluessel": false
     },
     {
       "text": "Armdrücken.",
-      "anfang": 62.48,
-      "ende": 63.12,
+      "anfang": 46.96,
+      "ende": 47.84,
       "satz": 21,
       "schluessel": true
     },
     {
-      "text": "Der",
-      "anfang": 63.52,
-      "ende": 63.6,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
       "text": "Versand",
-      "anfang": 63.68,
-      "ende": 64,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "ist",
-      "anfang": 64.08,
-      "ende": 64.24,
+      "anfang": 48.08,
+      "ende": 48.4,
       "satz": 22,
       "schluessel": false
     },
     {
       "text": "gratis,",
-      "anfang": 64.52,
-      "ende": 65.04,
+      "anfang": 48.68,
+      "ende": 49.04,
       "satz": 22,
       "schluessel": true
     },
     {
-      "text": "die",
-      "anfang": 65.08,
-      "ende": 65.12,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
       "text": "Größe",
-      "anfang": 65.2,
-      "ende": 65.6,
+      "anfang": 49.12,
+      "ende": 49.36,
       "satz": 22,
       "schluessel": false
     },
     {
-      "text": "tauschst",
-      "anfang": 65.68,
-      "ende": 66,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "du",
-      "anfang": 66.04,
-      "ende": 66.08,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "einfach",
-      "anfang": 66.12,
-      "ende": 66.4,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "um",
-      "anfang": 66.48,
-      "ende": 66.72,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "und",
-      "anfang": 67.12,
-      "ende": 67.2,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "du",
-      "anfang": 67.28,
-      "ende": 67.36,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "kannst",
-      "anfang": 67.44,
-      "ende": 67.68,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "es",
-      "anfang": 67.76,
-      "ende": 67.84,
+      "text": "tauschen,",
+      "anfang": 49.44,
+      "ende": 50,
       "satz": 22,
       "schluessel": false
     },
     {
       "text": "30",
-      "anfang": 67.92,
-      "ende": 68.32,
+      "anfang": 50.08,
+      "ende": 50.4,
       "satz": 22,
       "schluessel": false
     },
     {
       "text": "Tage",
-      "anfang": 68.4,
-      "ende": 68.64,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "lang",
-      "anfang": 68.72,
-      "ende": 68.88,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "testen.",
-      "anfang": 69.04,
-      "ende": 69.6,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "Passt",
-      "anfang": 69.76,
-      "ende": 70,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "es",
-      "anfang": 70.08,
-      "ende": 70.16,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "nicht,",
-      "anfang": 70.24,
-      "ende": 70.64,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "gibt's",
-      "anfang": 70.68,
-      "ende": 70.88,
-      "satz": 22,
-      "schluessel": false
-    },
-    {
-      "text": "dein",
-      "anfang": 70.96,
-      "ende": 71.12,
+      "anfang": 50.48,
+      "ende": 50.72,
       "satz": 22,
       "schluessel": false
     },
     {
       "text": "Geld",
-      "anfang": 71.16,
-      "ende": 71.36,
+      "anfang": 50.8,
+      "ende": 50.96,
       "satz": 22,
       "schluessel": false
     },
     {
       "text": "zurück.",
-      "anfang": 71.4,
-      "ende": 71.84,
+      "anfang": 51.04,
+      "ende": 51.44,
       "satz": 22,
       "schluessel": false
     },
     {
-      "text": "Wenn",
-      "anfang": 72.32,
-      "ende": 72.4,
+      "text": "Hältst",
+      "anfang": 51.76,
+      "ende": 52.04,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "du",
-      "anfang": 72.48,
-      "ende": 72.56,
+      "anfang": 52.08,
+      "ende": 52.16,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "auch",
-      "anfang": 72.6,
-      "ende": 72.72,
+      "anfang": 52.2,
+      "ende": 52.32,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "mit",
-      "anfang": 72.8,
-      "ende": 72.96,
+      "anfang": 52.4,
+      "ende": 52.48,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "beiden",
-      "anfang": 73,
-      "ende": 73.28,
+      "anfang": 52.52,
+      "ende": 52.72,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "Händen",
-      "anfang": 73.32,
-      "ende": 73.6,
+      "anfang": 52.8,
+      "ende": 53.04,
       "satz": 23,
       "schluessel": false
     },
     {
-      "text": "festhältst:",
-      "anfang": 73.68,
-      "ende": 74.44,
-      "satz": 23,
-      "schluessel": false
-    },
-    {
-      "text": "Schau's",
-      "anfang": 74.56,
-      "ende": 74.8,
-      "satz": 23,
-      "schluessel": false
-    },
-    {
-      "text": "dir",
-      "anfang": 74.88,
-      "ende": 74.96,
-      "satz": 23,
-      "schluessel": false
-    },
-    {
-      "text": "an.",
-      "anfang": 75.08,
-      "ende": 75.28,
-      "satz": 23,
-      "schluessel": false
-    },
-    {
-      "text": "Der",
-      "anfang": 75.44,
-      "ende": 75.6,
+      "text": "fest?",
+      "anfang": 53.2,
+      "ende": 53.68,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "Link",
-      "anfang": 75.72,
-      "ende": 75.84,
-      "satz": 23,
-      "schluessel": false
-    },
-    {
-      "text": "ist",
-      "anfang": 75.92,
-      "ende": 76,
+      "anfang": 53.76,
+      "ende": 54,
       "satz": 23,
       "schluessel": false
     },
     {
       "text": "unten.",
-      "anfang": 76.08,
-      "ende": 76.68,
+      "anfang": 54.08,
+      "ende": 54.48,
       "satz": 23,
       "schluessel": true
     },
     {
       "text": "Dabei",
-      "anfang": 76.88,
-      "ende": 77.2,
+      "anfang": 54.88,
+      "ende": 55.12,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "lag's",
-      "anfang": 77.32,
-      "ende": 77.52,
+      "anfang": 55.24,
+      "ende": 55.44,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "die",
-      "anfang": 77.6,
-      "ende": 77.68,
+      "anfang": 55.52,
+      "ende": 55.6,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "ganze",
-      "anfang": 77.76,
-      "ende": 78.16,
+      "anfang": 55.68,
+      "ende": 56,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "Zeit",
-      "anfang": 78.24,
-      "ende": 78.48,
+      "anfang": 56.08,
+      "ende": 56.4,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "an",
-      "anfang": 78.56,
-      "ende": 78.72,
+      "anfang": 56.52,
+      "ende": 56.64,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "einem",
-      "anfang": 78.8,
-      "ende": 78.96,
+      "anfang": 56.72,
+      "ende": 57.04,
       "satz": 24,
       "schluessel": false
     },
     {
       "text": "Ring.",
-      "anfang": 79.04,
-      "ende": 79.68,
+      "anfang": 57.12,
+      "ende": 57.68,
       "satz": 24,
       "schluessel": true
     }
