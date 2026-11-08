@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio-Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Ein Studio bei Nacht: dunkler Bühnenboden, warmes Scheinwerferlicht als Akzent.
+   Layout: Status-Leiste oben, darunter 3D-Bühne mit den Szenen und Detailspalte rechts. */
+:root {
+  --bg: #0e0f13;
+  --panel: #171920;
+  --line: #2a2d38;
+  --text: #ece9e2;
+  --muted: #9a9caa;
+  --accent: #f2b544;      /* Scheinwerfer */
+  --ok: #4fc3a1;
+  --warn: #e8a33d;
+  --bad: #e5604f;
+  --phase-alt: #8b8f9c;   /* graues Geschirr */
+  --phase-erkl: #6f9ee8;  /* Erklärbilder */
+  --phase-neu: #f2b544;   /* HalsFrei */
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--text); font: 15px/1.5 var(--body); display: flex; flex-direction: column; }
+header { padding: 18px 20px 12px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; border-bottom: 1px solid var(--line); }
+h1 { font: 700 22px/1.2 var(--display); margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+h1 span { color: var(--accent); }
+.meta { color: var(--muted); font-size: 13px; }
+.pipeline { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 20px; border-bottom: 1px solid var(--line); }
+.step { display: flex; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font-size: 13px; }
+.step b { font-weight: 600; }
+.step .val { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); }
+.dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.dot.ok { background: var(--ok); } .dot.warn { background: var(--warn); } .dot.bad { background: var(--bad); } .dot.off { background: var(--line); border: 1px solid var(--muted); }
+main { flex: 1; display: grid; grid-template-columns: 1fr 340px; min-height: 0; }
+#stage { position: relative; min-height: 360px; }
+#stage canvas { display: block; width: 100%; height: 100%; outline: none; }
+.legend { position: absolute; left: 16px; bottom: 14px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); background: rgba(14,15,19,.75); padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; }
+.hint { position: absolute; right: 16px; top: 12px; font-size: 12px; color: var(--muted); }
+#fallback { position: absolute; inset: 0; display: none; place-items: center; padding: 24px; color: var(--muted); text-align: center; }
+aside { border-left: 1px solid var(--line); padding: 18px 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+.tc { font-family: var(--mono); color: var(--accent); font-size: 13px; font-variant-numeric: tabular-nums; }
+h2 { font: 700 20px/1.25 var(--display); margin: 2px 0 0; text-wrap: balance; }
+.quote { font-size: 17px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 12px; margin: 0; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; font-size: 13px; }
+dt { color: var(--muted); } dd { margin: 0; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); }
+.nav { display: flex; gap: 8px; }
+button { font: 500 13px var(--body); color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.todo h3 { font: 600 13px var(--body); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; }
+.todo ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13px; }
+.src { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; margin-top: auto; }
+code { font-family: var(--mono); font-size: 12px; }
+@media (max-width: 820px) {
+  main { grid-template-columns: 1fr; }
+  #stage { height: 58vh; }
+  aside { border-left: 0; border-top: 1px solid var(--line); }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Studio · <span>Krümel × HalsFrei</span></h1>
+  <div class="meta">Hook B · 22 Szenen · 9:16, 1080 × 1920, 30 fps · Stand 8. Nov. 2026</div>
+</header>
+
+<section class="pipeline" aria-label="Produktionsstand">
+  <div class="step"><span class="dot ok"></span><b>Skript</b><span class="val">22/22 Sätze</span></div>
+  <div class="step"><span class="dot ok"></span><b>Prompts</b><span class="val">22/22</span></div>
+  <div class="step"><span class="dot off"></span><b>Referenzbilder</b><span class="val">0/4</span></div>
+  <div class="step"><span class="dot off"></span><b>3D-Clips</b><span class="val">0/22</span></div>
+  <div class="step"><span class="dot bad"></span><b>Stimme</b><span class="val">blockiert</span></div>
+  <div class="step"><span class="dot off"></span><b>Schnitt &amp; Grafik</b><span class="val">offen</span></div>
+  <div class="step"><span class="dot warn"></span><b>Länge</b><span class="val" id="total">≈ 1:31</span></div>
+</section>
+
+<main>
+  <div id="stage">
+    <div class="hint">Ziehen zum Drehen · Klick auf eine Szene</div>
+    <div class="legend" aria-label="Legende">
+      <span><i class="sw" style="background:var(--phase-alt)"></i>Graues Geschirr (1–10)</span>
+      <span><i class="sw" style="background:var(--phase-erkl)"></i>Erklärbilder (11–13)</span>
+      <span><i class="sw" style="background:var(--phase-neu)"></i>HalsFrei (14–22)</span>
+      <span><i class="dot bad"></i>Clip fehlt</span>
+      <span>Höhe = Szenenlänge</span>
+    </div>
+    <div id="fallback">Die 3D-Ansicht braucht WebGL. Die Szenen findest du rechts mit „Zurück“ und „Weiter“.</div>
+  </div>
+
+  <aside aria-live="polite">
+    <div>
+      <div class="tc" id="d-tc"></div>
+      <h2 id="d-title"></h2>
+    </div>
+    <p class="quote" id="d-text"></p>
+    <dl>
+      <dt>Länge</dt><dd id="d-len"></dd>
+      <dt>Clip erzeugen</dt><dd id="d-gen"></dd>
+      <dt>Geschirr</dt><dd id="d-phase"></dd>
+      <dt>Einblendung</dt><dd id="d-over"></dd>
+      <dt>Status</dt><dd><span class="chip"><i class="dot bad"></i>Clip fehlt</span></dd>
+    </dl>
+    <div class="nav">
+      <button id="prev" type="button">← Zurück</button>
+      <button id="next" type="button">Weiter →</button>
+    </div>
+    <div class="todo">
+      <h3>Als Nächstes</h3>
+      <ul>
+        <li>4 Referenzbilder erzeugen (Krümel alt, Krümel HalsFrei, Frauchen, Geschirr)</li>
+        <li>22 Clips erzeugen und als <code>01.mp4</code>–<code>22.mp4</code> hochladen</li>
+        <li><code>api.elevenlabs.io</code> freigeben, damit Krümel eine Stimme bekommt</li>
+      </ul>
+    </div>
+    <div class="src">Quelle: <code>tools/viral-studio/projekte/2026-11-01-kruemel-halsfrei/</code> (skript.json, prompts.md). Längen geschätzt, genau erst mit der fertigen Stimme.</div>
+  </aside>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const SZENEN = [
+  ["Hook B · Haustür", 5.0, 5, "Kaum zu Hause, will ich nur noch raus aus dem Ding.", "Gelber Kasten: „WENN DEIN HUND NACH DEM GASSI SOFORT AUS DEM GESCHIRR WILL“"],
+  ["Rückblende Halsband", 4.0, 5, "Damit ich nicht mehr so am Halsband zerre.", "–"],
+  ["Nicken, dann skeptisch", 5.0, 10, "Gute Idee. Aber so richtig bequem war das Ding nie.", "🤨"],
+  ["Der Ring", 2.5, 5, "Am Ring lag's nicht.", "–"],
+  ["Das Riemchen", 4.0, 5, "Sondern an dem schmalen Riemchen vorne an meiner Brust.", "Roter Pfeil auf das Riemchen"],
+  ["Schmetterling", 3.5, 5, "Bin ich losgestürmt, ist es dauernd verrutscht.", "–"],
+  ["Vorderbein", 3.5, 5, "Und unter den Vorderbeinen hat's ständig gezwickt.", "😒"],
+  ["Platt auf dem Teppich", 3.5, 5, "Spazierengehen? Ehrlich gesagt … eher so mittel.", "–"],
+  ["Nachstellen", 3.0, 5, "Frauchen hat's zigmal nachgestellt.", "–"],
+  ["Trocken in die Kamera", 4.0, 5, "Aber ein schmales Riemchen bleibt ein schmales Riemchen.", "–"],
+  ["Das Polster", 5.0, 10, "Was ich brauchte: ein breites, weiches Polster an der Brust.", "–"],
+  ["Erklärbild Zug", 4.5, 5, "Da verteilt sich der Zug – und landet nicht am Hals.", "Rote Pfeile auf der Brust"],
+  ["Blick von oben", 6.0, 10, "Und der Ring vorne lenkt mich beim Losziehen sanft zur Seite, zu Frauchen.", "Gebogener Pfeil"],
+  ["Frauchen zeigt HalsFrei", 3.5, 5, "So eins hat sie gefunden: HalsFrei.", "„HalsFrei von Hundsbande“"],
+  ["Anziehen", 3.0, 5, "Über den Kopf, Klick, fertig.", "–"],
+  ["Name-Patch", 5.0, 10, "Und mein Name steht drauf. Falls ich mal stiften geh.", "😎 · Patch „KRÜMEL“, 030 23125 417"],
+  ["Taube", 3.0, 5, "Ziehen tu ich manchmal immer noch.", "–"],
+  ["Fröhlich nebeneinander", 4.0, 5, "Aber ich fühl mich drin wie in meiner Lieblingsdecke.", "🥰"],
+  ["Produktkarte", 5.5, 10, "Frauchen sagt: Der Versand ist gratis, die Größe tauschst du einfach um …", "Produktkarte (bis Ende Szene 20)"],
+  ["Kopf schief", 6.0, 10, "… und du kannst es 30 Tage testen. Passt's nicht, gibt's das Geld zurück.", "Produktkarte bleibt"],
+  ["Pfote nach unten", 4.5, 5, "Wenn dein Hund auch zieht: Schau's dir unten an.", "Pfeil nach unten"],
+  ["Aus dem Bild (Schleife)", 3.0, 5, "Und alles fing damit an, dass …", "Harter Schnitt zurück auf Szene 1"],
+];
+const phase = i => i < 10 ? ["Grau, schmales Riemchen", "--phase-alt"] : i < 13 ? ["Erklärbild (HalsFrei-Polster)", "--phase-erkl"] : ["HalsFrei, schwarz", "--phase-neu"];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmt = s => { const m = Math.floor(s / 60), r = s - m * 60; return `${m}:${r.toFixed(1).padStart(4, "0")}`.replace(".", ","); };
+const starts = []; let t = 0; SZENEN.forEach(s => { starts.push(t); t += s[1]; });
+document.getElementById("total").textContent = "≈ " + fmt(t).replace(/,0$/, "");
+
+let current = 0, setHighlight = () => {};
+function show(i) {
+  current = (i + SZENEN.length) % SZENEN.length;
+  const [title, len, gen, text, over] = SZENEN[current];
+  document.getElementById("d-tc").textContent = `Szene ${current + 1} · ${fmt(starts[current])} – ${fmt(starts[current] + len)}`;
+  document.getElementById("d-title").textContent = title;
+  document.getElementById("d-text").textContent = "„" + text + "“";
+  document.getElementById("d-len").textContent = len.toFixed(1).replace(".", ",") + " s";
+  document.getElementById("d-gen").textContent = gen + " s";
+  document.getElementById("d-phase").textContent = phase(current)[0];
+  document.getElementById("d-over").textContent = over;
+  setHighlight(current);
+}
+document.getElementById("prev").onclick = () => show(current - 1);
+document.getElementById("next").onclick = () => show(current + 1);
+document.addEventListener("keydown", e => { if (e.key === "ArrowLeft") show(current - 1); if (e.key === "ArrowRight") show(current + 1); });
+
+(function stage() {
+  const host = document.getElementById("stage");
+  let renderer;
+  try { renderer = new THREE.WebGLRenderer({ antialias: true }); } catch (e) { document.getElementById("fallback").style.display = "grid"; return; }
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.shadowMap.enabled = true;
+  host.prepend(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(css("--bg"));
+  scene.fog = new THREE.Fog(css("--bg"), 26, 60);
+  const cam = new THREE.PerspectiveCamera(42, 1, 0.1, 200);
+  cam.position.set(0, 10, 26);
+  const controls = new THREE.OrbitControls(cam, renderer.domElement);
+  controls.enableDamping = true; controls.target.set(0, 1.5, 0);
+  controls.minDistance = 10; controls.maxDistance = 40; controls.maxPolarAngle = Math.PI * 0.48;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  controls.autoRotate = !reduce; controls.autoRotateSpeed = 0.35;
+
+  scene.add(new THREE.HemisphereLight(0x9aa4c8, 0x1a1712, 0.55));
+  const spot = new THREE.SpotLight(new THREE.Color(css("--accent")), 1.6, 70, Math.PI / 5, 0.5);
+  spot.position.set(0, 22, 6); spot.castShadow = true; spot.shadow.mapSize.set(1024, 1024);
+  scene.add(spot); scene.add(spot.target);
+
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(30, 64), new THREE.MeshStandardMaterial({ color: 0x15161b, roughness: 0.9 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+
+  // Szenen als Filmbild-Blöcke auf einem Bogen (wie ein Filmstreifen auf der Bühne)
+  const total = t, R = 11, arc = Math.PI * 0.95, gap = 0.012;
+  const blocks = [];
+  SZENEN.forEach((s, i) => {
+    const a0 = -arc / 2 + arc * (starts[i] / total) + gap, a1 = -arc / 2 + arc * ((starts[i] + s[1]) / total) - gap;
+    const mid = (a0 + a1) / 2, w = (a1 - a0) * R, h = s[1] * 0.75;
+    const color = new THREE.Color(css(phase(i)[1]));
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.45, metalness: 0.15, emissive: color, emissiveIntensity: 0.05 });
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.9), mat);
+    m.position.set(Math.sin(mid) * R, h / 2, -Math.cos(mid) * R + 4);
+    m.lookAt(0, h / 2, 4); m.castShadow = true; m.userData.i = i;
+    scene.add(m); blocks.push(m);
+    // rotes Lämpchen: Clip fehlt
+    const lamp = new THREE.Mesh(new THREE.SphereGeometry(0.16, 16, 12), new THREE.MeshBasicMaterial({ color: new THREE.Color(css("--bad")) }));
+    lamp.position.set(m.position.x, h + 0.35, m.position.z); scene.add(lamp);
+    // Szenennummer
+    const c = document.createElement("canvas"); c.width = c.height = 128;
+    const g = c.getContext("2d"); g.fillStyle = "#0e0f13"; g.font = "700 64px 'Bricolage Grotesque', sans-serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(String(i + 1), 64, 68);
+    const label = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.9), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(c), transparent: true }));
+    label.position.copy(m.position).add(new THREE.Vector3(0, h / 2 - 0.7, 0)); label.lookAt(0, label.position.y, 4);
+    label.translateZ(0.46); scene.add(label);
+  });
+
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(1, 0.05, 8, 48), new THREE.MeshBasicMaterial({ color: new THREE.Color(css("--accent")) }));
+  ring.rotation.x = -Math.PI / 2; scene.add(ring);
+  setHighlight = i => {
+    blocks.forEach((b, j) => { b.material.emissiveIntensity = j === i ? 0.55 : 0.05; });
+    const b = blocks[i]; ring.position.set(b.position.x, 0.02, b.position.z);
+    ring.scale.setScalar(b.geometry.parameters.width * 0.75 + 0.6);
+    spot.target.position.copy(b.position);
+  };
+  setHighlight(current);
+
+  const ray = new THREE.Raycaster(), p = new THREE.Vector2(); let down = null;
+  renderer.domElement.addEventListener("pointerdown", e => { down = [e.clientX, e.clientY]; controls.autoRotate = false; });
+  renderer.domElement.addEventListener("pointerup", e => {
+    if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 5) return;
+    const r = renderer.domElement.getBoundingClientRect();
+    p.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+    ray.setFromCamera(p, cam);
+    const hit = ray.intersectObjects(blocks)[0];
+    if (hit) show(hit.object.userData.i);
+  });
+
+  function size() { const w = host.clientWidth, h = host.clientHeight; renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); }
+  new ResizeObserver(size).observe(host); size();
+  (function loop() { controls.update(); renderer.render(scene, cam); requestAnimationFrame(loop); })();
+})();
+show(0);
+</script>
+</body>
+</html>

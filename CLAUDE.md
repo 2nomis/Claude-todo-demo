@@ -16,6 +16,7 @@ Todo-Demo-App: Node.js ≥ 22.13, Express 5, eingebautes `node:sqlite`, Frontend
 | `test/` | `node:test`: `db.test.js`, `api.test.js`, `server.test.js` (Start: PORT, HOST, belegter Port), `url.test.js` |
 | `tools/ecc/setup-global.sh` | Richtet ECC für alle Projekte eines Rechners ein; auch als Setup-Skript für Cloud-Umgebungen (ohne Repo, Sitzung oder Zugangsdaten) |
 | `tools/viral-studio/` | Viral Studio Folder: gezeichnete Erklär-Reels für den Shop des Nutzers; eigene `AGENTS.md` (dort lesen und befolgen) |
+| `tools/studio-dashboard/index.html` | 3D-Dashboard (three.js) zum Krümel-Video; veröffentlicht als Artifact https://claude.ai/artifact/HtLKZDvMj7bciKeVMuBk9R, bei Änderungen beides aktualisieren |
 | `tools/paperclip/` | Paperclip mit Dropshipping-Agententeam: `setup.sh` (Installation), `start.sh` (Server + Team), `team.mjs` (Firma, Ziel, 9 Agenten) |
 
 ```bash
