@@ -51,6 +51,11 @@ Frontend-Verhalten ist nicht automatisch getestet (kein Playwright im Repo); Än
 - Neun Namen gibt es als Befehl und als Skill (u. a. `ecc-guide`, `security-scan`, `plan-canvas`, `orch-*`); `/ecc:<name>` lädt dann immer den Befehl.
 - Bewährter Ablauf: `/ecc:plan` → `/ecc:tdd-workflow` → `/ecc:code-review`. `/ecc:code-review` mit PR-Nummer postet ein Review auf GitHub.
 
+## MCP-Server Knightvision
+
+- In `.mcp.json` als `knightvision` eingetragen (Typ `http`, `https://mcp.knightvision.tech/`). Claude Code fragt beim ersten Start nach Freigabe des Projekt-Servers.
+- Cloud: Host `mcp.knightvision.tech` muss in den Netzwerkregeln der Umgebung erlaubt sein. Funktion noch nicht getestet (Host war beim Einrichten gesperrt).
+
 ## Paperclip
 
 - Nicht Teil der Todo-App: Agenten-Firma „Dropshipping Store“ für den Shop des Nutzers (CEO, Marketing mit Ads/Content/SEO, Produkt-Scout, Einkauf, Kundenservice, Finanzen). Rollentexte stehen in `tools/paperclip/team.mjs`.
